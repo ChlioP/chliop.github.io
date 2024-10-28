@@ -134,7 +134,7 @@ section {
     align-items: center;
     padding: 0 9%;
     color: var(--main-color);
-    background: url('home.jpg') no-repeat;
+    background: url('porfolio.jpg') no-repeat;
     background-size: cover;
     background-position: center;
 }
