@@ -319,18 +319,21 @@ span {
 }
 
 .about-img img {
-    width: 90%;
-    border-radius: 50%;
+    width: 200px;  /* Set a fixed width */
+    height: 200px;  /* Set the same height for a circle */
+    border-radius: 50%;  /* Rounds the image */
     border: .2rem solid var(--main-color);
+    object-fit: cover;  /* Ensures the image covers the container */
 }
+
 
 .about-img .circle-spin {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) rotate(0);
-    width: 100%;
-    height: 100%;
+    transform: translate(-50%, -50%);
+    width: 220px;  /* Adjust width to slightly larger than the image */
+    height: 220px;  /* Adjust height to slightly larger than the image */
     border-radius: 50%;
     border-top: .2rem solid var(--second-bg-color);
     border-bottom: .2rem solid var(--second-bg-color);
@@ -338,6 +341,7 @@ span {
     border-right: .2rem solid var(--bg-color);
     animation: aboutSpinner 8s linear infinite;
 }
+
 
 .about-content {
     text-align: center;
