@@ -134,7 +134,7 @@ section {
     align-items: center;
     padding: 0 9%;
     color: var(--main-color);
-    background: var(--bg-color) url('rabbitbackground.png') no-repeat center/cover;
+    background:url('rabbitbackground.png') no-repeat;
     background-size: cover;
     background-position: center;
 }
