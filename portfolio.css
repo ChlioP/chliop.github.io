@@ -25,9 +25,6 @@ html {
 }
 
 body {
-    background: url('rabbitbackground.png') no-repeat center center fixed;
-    background-size: cover;
-    background-color: #1E1E2E; /* Fallback color */
     background: var(--second-bg-color);
     color: var(--text-color);
 }
@@ -102,7 +99,7 @@ body {
     display: flex;
     align-items: center;
     padding: 10rem 9%;
-    background: url('homepic.png') no-repeat center/cover;
+    background: url('rabbitbackground.png') no-repeat center/cover;
     position: relative;
 }
 
