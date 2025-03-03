@@ -25,6 +25,9 @@ html {
 }
 
 body {
+    background: url('rabbitbackground.png') no-repeat center center fixed;
+    background-size: cover;
+    background-color: #1E1E2E; /* Fallback color */
     background: var(--second-bg-color);
     color: var(--text-color);
 }
