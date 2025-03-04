@@ -479,18 +479,14 @@ span {
     margin-left: 1rem;
 }
 
-/* .projects .project-row {
+.projects .project-row {
     display: flex;
     flex-wrap: wrap;
     gap: 5rem;
-} */
+}
 
 .projects-row .projects-column {
     flex: 1 1 40rem;
-}
-
-.projects-column .projects-box {
-    border-left: .2rem solid var(--text-color);
 }
 
 .projects-box {
