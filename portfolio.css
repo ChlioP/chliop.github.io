@@ -291,7 +291,8 @@ section {
     align-items: center;
     flex-direction: column;
     gap: 2rem;
-    background: var(--bg-color);
+    background: linear-gradient(135deg, rgba(0, 255, 209, 0.5), rgba(255, 0, 122, 0.5));
+    backdrop-filter: blur(10px);
     padding-bottom: 6rem;
     color: white;
 }
@@ -365,12 +366,17 @@ span {
 }
 
 .education {
+    background: linear-gradient(180deg, #25263D, #1E1E2E);
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     min-height: 100vh;
     padding-bottom: 5rem;
+}
+.education h3 {
+    color: var(--main-color);
 }
 
 .education .education-row {
@@ -460,9 +466,18 @@ span {
 
 .projects {
     padding: 10rem 9%;
-    background: var(--second-bg-color);
+    background: url('ProjectsBackground.png') no-repeat center/cover;
+    position: relative;
     color: white;
     text-align: center;
+}
+
+.projects::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
 }
 
 .projects h2 {
@@ -709,9 +724,13 @@ span {
 
 .contact {
     padding: 10rem 9%;
-    background: var(--second-bg-color);
+    background: linear-gradient(135deg, rgba(0, 255, 209, 0.4), rgba(255, 0, 122, 0.4));
     color: white;
     text-align: center;
+}
+
+.contact h2 {
+    color: var(--main-color);
 }
 
 .contact form {
