@@ -366,8 +366,11 @@ span {
 }
 
 .education {
-    background: linear-gradient(180deg, #25263D, #1E1E2E);
+    padding: 10rem 9%;
+    background: url('Experiences.png') no-repeat center/cover;
+    position: relative;
     color: white;
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -375,6 +378,16 @@ span {
     min-height: 100vh;
     padding-bottom: 5rem;
 }
+
+.education::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    z-index: -1;
+}
+
 .education h3 {
     color: var(--main-color);
 }
@@ -448,8 +461,10 @@ span {
     padding-right: .5rem;
 }
 
-.education-content .content h3 {
+.projects-content .content h3 {
     font-size: 2rem;
+    color: var(--accent-color);
+    text-shadow: 2px 2px 10px rgba(255, 0, 122, 0.9);
 }
 
 .education-content .content p{
@@ -476,8 +491,8 @@ span {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(8px); 
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(12px); 
     z-index: -1;
 }
 
@@ -585,9 +600,26 @@ span {
 }
 
 .skills {
+    padding: 10rem 9%;
+    background: url('SkillsBackground.png') no-repeat center/cover;
+    position: relative;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     min-height: 100vh;
     padding-bottom: 7rem;
-    background: var(--second-bg-color);
+}
+
+.skills::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    z-index: -1;
 }
 
 .skills .skills-row {
