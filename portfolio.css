@@ -366,8 +366,9 @@ span {
 }
 
 .education {
-    padding: 10rem 9%;
-    background: url('Experiences.png') no-repeat center/cover;
+    padding: 8rem 9% 5rem;
+    background: linear-gradient(135deg, rgba(0, 255, 209, 0.3), rgba(255, 0, 122, 0.3));
+    backdrop-filter: blur(8px);
     position: relative;
     color: white;
     text-align: center;
@@ -375,27 +376,10 @@ span {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    min-height: 100vh;
-    padding-bottom: 5rem;
-}
-
-.education::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(10px);
-    z-index: -1;
 }
 
 .education h3 {
     color: var(--main-color);
-}
-
-.education .education-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5rem;
 }
 
 .education-row .education-column {
@@ -480,8 +464,8 @@ span {
 }
 
 .projects {
-    padding: 10rem 9%;
-    background: url('ProjectsBackground.png') no-repeat center/cover;
+    padding:  8rem 9% 5rem;
+    background: url('Expenriences.png') no-repeat center/cover;
     position: relative;
     color: white;
     text-align: center;
@@ -492,8 +476,14 @@ span {
     position: absolute;
     inset: 0;
     background: rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(12px); 
+    backdrop-filter: blur(15px); 
     z-index: -1;
+}
+
+.projects-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
 }
 
 .projects h2 {
@@ -518,12 +508,6 @@ span {
 
 .projects-row .projects-column {
     flex: 1 1 40rem;
-}
-
-.projects-box {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 3rem;
 }
 
 .projects-content {
@@ -600,8 +584,9 @@ span {
 }
 
 .skills {
-    padding: 10rem 9%;
-    background: url('SkillsBackground.png') no-repeat center/cover;
+    padding: 8rem 9% 5rem;
+    background: linear-gradient(135deg, rgba(0, 255, 209, 0.3), rgba(255, 0, 122, 0.3));
+    backdrop-filter: blur(8px);
     position: relative;
     color: white;
     text-align: center;
@@ -609,23 +594,13 @@ span {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    min-height: 100vh;
-    padding-bottom: 7rem;
-}
-
-.skills::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(10px);
-    z-index: -1;
 }
 
 .skills .skills-row {
     display: flex;
     flex-wrap: wrap;
-    gap: 5rem;
+    justify-content: center;
+    gap: 3rem;
 }
 
 .skills-row .skills-column {
@@ -936,6 +911,14 @@ form button:hover::before {
     }
     .projects-box {
         grid-template-columns: 1fr;
+    }
+    .skills-row {
+        flex-direction: column;
+    }
+
+    .skills-column {
+        flex: 1 1 100%;
+        max-width: 100%;
     }
 }
 @keyframes homeBgText {
