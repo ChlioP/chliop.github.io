@@ -466,7 +466,7 @@ span {
 
 .projects {
     padding: 10rem 9%;
-    background: url('image.png') no-repeat center/cover;
+    background: url('ProjectsBackground.png') no-repeat center/cover;
     position: relative;
     color: white;
     text-align: center;
@@ -476,7 +476,8 @@ span {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(8px); 
     z-index: -1;
 }
 
@@ -524,6 +525,7 @@ span {
     font-size: 2rem;
     margin-bottom: 1rem;
     color: var(--accent-color);
+    text-shadow: 2px 2px 10px rgba(255, 0, 122, 0.8); /* Neon glow effect */
 }
 
 .projects-content p {
@@ -566,7 +568,8 @@ span {
 
 .projects-content .content h3 {
     font-size: 2rem;
-    color: #3D550C;
+     color: #00FFD1; /* Bright cyan */
+    text-shadow: 2px 2px 10px rgba(0, 255, 209, 0.7);
 }
 
 .projects-content .content p{
