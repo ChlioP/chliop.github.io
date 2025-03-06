@@ -382,9 +382,19 @@ span {
     color: var(--main-color);
 }
 
-.education-row .education-column {
-    flex: 1 1 40rem;
+.education-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3rem;
 }
+
+/* Set both columns to take half of the width */
+.education-column {
+    flex: 1 1 48%;
+    text-align: left;
+}
+
 
 .education-column .title {
     font-size: 2.5rem;
@@ -920,6 +930,19 @@ form button:hover::before {
         flex: 1 1 100%;
         max-width: 100%;
     }
+    .education-row {
+        flex-direction: column;
+    }
+
+    .education-column {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    .education-column .title {
+        text-align: center;
+    }
+    
 }
 @keyframes homeBgText {
     0%, 
