@@ -1,17 +1,13 @@
 /* hc-dashboard.css */
 
 :root {
-  --bg-color: #1E1E2E;
-  --second-bg-color: #25263D;
+  --bg-color: #1E1E2E; /* Matches portfolio */
+  --second-bg-color: #25263D; /* Matches portfolio */
   --text-color: #E0E0E0;
   --main-color: #00FFD1;
-  --accent-color: #FF007A;
-  --link-color: #00BFFF;
+  --accent-color: #FF007A; /* Hot pink for link */
+  --link-color: #FF007A;
   --overlay-color: rgba(0, 0, 0, 0.6);
-}
-
-body.hc-dashboard {
-  background: linear-gradient(to right, #162337, #40659C);
 }
 
 body {
@@ -24,13 +20,13 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 2rem;
 }
 
 .project-title {
-  font-size: 3rem;
+  font-size: 3.2rem;
   color: var(--main-color);
   text-align: center;
   margin-bottom: 0.5rem;
@@ -38,17 +34,24 @@ body {
 
 .subtitle {
   text-align: center;
-  color: var(--link-color);
+  color: var(--accent-color);
   margin-bottom: 2rem;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.project-intro {
+  font-size: 1.7rem;
+  margin-bottom: 3rem;
+  color: var(--text-color);
 }
 
 .project-section {
-  margin-bottom: 3rem;
-  background: rgba(255, 255, 255, 0.05);
+  margin-bottom: 2.5rem;
+  background: rgba(255, 255, 255, 0.04);
   border-left: 4px solid var(--main-color);
-  padding: 1.5rem;
-  border-radius: 8px;
+  padding: 1.2rem 1.5rem;
+  border-radius: 6px;
 }
 
 .project-section h2 {
@@ -62,20 +65,21 @@ body {
 }
 
 .project-section ul li {
-  font-size: 1.6rem;
-  margin-bottom: 0.8rem;
+  font-size: 1.55rem;
+  margin-bottom: 0.6rem;
   color: white;
 }
 
 .project-section p,
 .project-section a {
   font-size: 1.6rem;
-  color: white;
   line-height: 1.6;
+  color: var(--text-color);
 }
 
 .project-section a {
-  color: var(--link-color);
+  color: var(--accent-color);
+  font-weight: 500;
   text-decoration: underline;
 }
 
@@ -87,7 +91,7 @@ body {
   color: white;
   text-decoration: none;
   border-radius: 8px;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-weight: 600;
   transition: 0.3s ease-in-out;
 }
@@ -107,11 +111,11 @@ body {
   }
 
   .subtitle {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .project-section h2 {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
   }
 
   .project-section ul li,
