@@ -1,0 +1,126 @@
+/* hc-dashboard.css */
+
+:root {
+  --bg-color: #1E1E2E;
+  --second-bg-color: #25263D;
+  --text-color: #E0E0E0;
+  --main-color: #00FFD1;
+  --accent-color: #FF007A;
+  --link-color: #00BFFF;
+  --overlay-color: rgba(0, 0, 0, 0.6);
+}
+
+body.hc-dashboard {
+  background: linear-gradient(to right, #162337, #40659C);
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: var(--second-bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.project-title {
+  font-size: 3rem;
+  color: var(--main-color);
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  text-align: center;
+  color: var(--link-color);
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+.project-section {
+  margin-bottom: 3rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-left: 4px solid var(--main-color);
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.project-section h2 {
+  color: var(--main-color);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.project-section ul {
+  padding-left: 2rem;
+}
+
+.project-section ul li {
+  font-size: 1.6rem;
+  margin-bottom: 0.8rem;
+  color: white;
+}
+
+.project-section p,
+.project-section a {
+  font-size: 1.6rem;
+  color: white;
+  line-height: 1.6;
+}
+
+.project-section a {
+  color: var(--link-color);
+  text-decoration: underline;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 1rem 2rem;
+  background: linear-gradient(to right, var(--main-color), var(--accent-color));
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background: linear-gradient(to right, var(--accent-color), var(--main-color));
+  transform: translateY(-2px);
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .project-title {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+  }
+
+  .project-section h2 {
+    font-size: 1.7rem;
+  }
+
+  .project-section ul li,
+  .project-section p,
+  .project-section a {
+    font-size: 1.4rem;
+  }
+
+  .btn {
+    font-size: 1.4rem;
+  }
+}
