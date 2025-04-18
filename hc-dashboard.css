@@ -3,7 +3,7 @@
 :root {
   --bg-color: #1E1E2E; /* Matches portfolio */
   --second-bg-color: #25263D; /* Matches portfolio */
-  --text-color: #E0E0E0;
+  --text-color: white;
   --main-color: #00FFD1;
   --accent-color: #FF007A; /* Hot pink for link */
   --link-color: #FF007A;
@@ -14,8 +14,9 @@ body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  background: var(--second-bg-color);
-  color: var(--text-color);
+  background: linear-gradient(135deg, rgba(0, 255, 209, 0.5), rgba(255, 0, 122, 0.5));
+  backdrop-filter: blur(10px);
+  color: white;
   line-height: 1.6;
 }
 
@@ -27,7 +28,7 @@ body {
 
 .project-title {
   font-size: 3rem;
-  color: var(--main-color);
+  color: white;
   text-align: center;
   margin-bottom: 0.3rem;
 }
