@@ -592,55 +592,6 @@ span {
     padding-top: .5rem;
     color:white;
 }
-.project-title {
-  font-size: 3rem;
-  color: var(--main-color);
-  text-align: center;
-  margin-bottom: 0.5rem;
-}
-
-.subtitle {
-  text-align: center;
-  color: var(--accent-color);
-  margin-bottom: 2rem;
-  font-size: 1.5rem;
-}
-
-.project-section {
-  margin-bottom: 3rem;
-  background: rgba(255, 255, 255, 0.05);
-  border-left: 4px solid var(--main-color);
-  padding: 1.5rem;
-  border-radius: 8px;
-}
-
-.project-section h2 {
-  color: var(--main-color);
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.project-section ul {
-  padding-left: 2rem;
-}
-
-.project-section ul li {
-  font-size: 1.6rem;
-  margin-bottom: 0.8rem;
-  color: white;
-}
-
-.project-section p,
-.project-section a {
-  font-size: 1.6rem;
-  color: white;
-  line-height: 1.6;
-}
-
-.project-section a {
-  color: var(--accent-color);
-  text-decoration: underline;
-}
 
 .skills {
     padding: 8rem 9% 5rem;
