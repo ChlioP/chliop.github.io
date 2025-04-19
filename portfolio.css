@@ -292,7 +292,7 @@ section {
     background: linear-gradient(135deg, rgba(0, 255, 209, 0.5), rgba(255, 0, 122, 0.5));
     backdrop-filter: blur(10px);
     padding-bottom: 6rem;
-    color: white;
+    color: var(--main-color);
 }
 
 .heading {
@@ -401,7 +401,7 @@ span {
 }
 
 .education-column .education-box {
-    border-left: .2rem solid var(--main-color);
+    border-left: .2rem solid var(--accent-color);
 }
 
 .education-box .education-content {
@@ -423,7 +423,7 @@ span {
 .education-content .content {
     position: relative;
     padding: 1.5rem;
-    border: .2rem solid var(--main-color);
+    border: .2rem solid var(--accent-color);
     border-radius: .6rem;
     margin-bottom: 2rem;
 }
@@ -455,8 +455,7 @@ span {
 
 .education-content .content h3{
     font-size: 2rem;
-    color: var(--accent-color);
-    text-shadow: 2px 2px 10px rgba(255, 0, 122, 0.8);
+    color: var(--main-color);
 }
 
 .education-content .content p{
@@ -954,12 +953,14 @@ form button:hover::before {
 }
 .education-content .content:hover,
 .projects-content .content:hover {
-    box-shadow: 0 0 12px rgba(255, 0, 122, 0.6), 
+    box-shadow: 0 0 12px rgba(255, 0, 122, 0.6),
                 0 0 24px rgba(255, 0, 122, 0.4),
                 0 0 36px rgba(255, 0, 122, 0.2);
     border-color: rgba(255, 0, 122, 0.6);
-    transition: box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    background-color: rgba(255, 0, 122, 0.15); /* More solid inside */
+    transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
+
 
 .education-content .content:hover::before,
 .projects-content .content:hover::before {
