@@ -952,7 +952,8 @@ form button:hover::before {
     }
 }
 .education-content .content:hover,
-.projects-content .content:hover {
+.projects-content .content:hover,
+.skills-box .skills-content:hover {
     box-shadow: 0 0 12px rgba(255, 0, 122, 0.6),
                 0 0 24px rgba(255, 0, 122, 0.4),
                 0 0 36px rgba(255, 0, 122, 0.2);
@@ -963,7 +964,8 @@ form button:hover::before {
 
 
 .education-content .content:hover::before,
-.projects-content .content:hover::before {
+.projects-content .content:hover::before,
+.skills-box .skills-content:hover::before {
     background: rgba(255, 0, 122, 0.05); /* soft hot pink overlay */
     opacity: 1;
 }
