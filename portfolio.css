@@ -17,6 +17,21 @@
     --main-color: #00FFD1; /* Neon cyan */
     --accent-color: #FF007A; /* Bright pink accent */
     --overlay-color: rgba(0, 0, 0, 0.6); /* Darker overlay for better text visibility */
+    transition: all 0.5s ease;
+}
+
+.light-mode {
+  --bg-color: #f5f5f5;
+  --second-bg-color: #ffffff;
+  --text-color: #1E1E2E;
+  --main-color: #007BFF;
+  --accent-color: #E91E63;
+  --overlay-color: rgba(255, 255, 255, 0.3);
+}
+
+
+body, .projects, .education, .skills, .contact {
+  transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 html {
@@ -185,6 +200,24 @@ section {
 .home-content .text-animate h3::before {
     content: none;
 }
+
+#theme-toggle {
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+  font-size: 2.5rem;
+  background: none;
+  border: none;
+  color: var(--text-color);
+  cursor: pointer;
+  transition: transform 0.3s, color 0.3s;
+}
+
+#theme-toggle:hover {
+  transform: scale(1.2);
+  color: var(--main-color);
+}
+
 
 .btn-box {
     width: 34.5rem;
@@ -489,7 +522,7 @@ span {
     position: absolute;
     inset: 0;
     background: url('Experiences.png') no-repeat center/cover;
-    filter: blur(15px); /* strong blur effect */
+    filter: blur(5px); /* strong blur effect */
     transform: scale(1.05); /* slight scale to avoid blur edge cutoff */
     z-index: -1;
     opacity: 0.6; /* you can lower it more if needed */
@@ -541,7 +574,17 @@ span {
     position: relative;
     overflow: hidden;
 }
-
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 8px var(--accent-color);
+  }
+  50% {
+    box-shadow: 0 0 15px var(--accent-color);
+  }
+  100% {
+    box-shadow: 0 0 8px var(--accent-color);
+  }
+}
 .projects-content:hover {
     background: rgba(37, 38, 61, 0.95); /* matches second-bg-color, more solid */
     transform: translateY(-6px);
@@ -549,6 +592,7 @@ span {
                 0 0 24px rgba(255, 0, 122, 0.2),
                 0 0 36px rgba(255, 0, 122, 0.1);
     border-left: 3px solid var(--accent-color); /* switch neon cyan to pink on hover */
+    animation: pulseGlow 1.5s infinite;
 }
 
 .projects-content h3 {
