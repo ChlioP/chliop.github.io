@@ -60,7 +60,7 @@ body {
 }
 
 .project-section h2 {
-  font-family: 'Chewy', cursive;
+  font-family: 'Chewy', system-ui;
   color: darkblue;
   font-size: 1.65rem;
   margin-bottom: 1.2rem;
