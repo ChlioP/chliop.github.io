@@ -1,3 +1,6 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chewy&family=Signika+Negative:wght@300..700&display=swap" rel="stylesheet">
 :root {
   --bg-color: #1E1E2E;
   --second-bg-color: #25263D;
@@ -9,7 +12,7 @@
 }
 
 body {
-  font-family: 'Signika', sans-serif;
+  font-family: 'Signika Negative', sans-serif;
   margin: 0;
   padding: 0;
   background: linear-gradient(45deg, rgba(0, 255, 209, 0.5), rgba(255, 0, 122, 0.5));
@@ -25,7 +28,7 @@ body {
 }
 
 .project-title {
-  font-family: 'Chewy', cursive;
+  font-family: 'Chewy', system-ui;
   font-size: 3rem;
   color: darkblue;
   text-align: center;
