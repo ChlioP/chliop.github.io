@@ -261,7 +261,7 @@ section {
     width: 0;
     height: 100%;
     z-index: -1;
-    background: rgba(255, 0, 122, 0.05); /* soft hot pink overlay */
+    background: var(--bg-color); 
     transition: width 0.5s ease-in-out;
 }
 
@@ -476,21 +476,32 @@ span {
 }
 
 .projects {
-    padding:  8rem 9% 5rem;
-    background: url('Experiences.png') no-repeat center/cover;
+    padding: 8rem 9% 5rem;
     position: relative;
     color: white;
     text-align: center;
+    z-index: 1;
+    overflow: hidden;
 }
 
 .projects::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(30, 30, 46, 0.7); /* Matches --bg-color, cleaner dark */
-    backdrop-filter: blur(20px); 
+    background: url('Experiences.png') no-repeat center/cover;
+    filter: blur(15px); /* strong blur effect */
+    transform: scale(1.05); /* slight scale to avoid blur edge cutoff */
+    z-index: -1;
+    opacity: 0.6; /* you can lower it more if needed */
+}
+.projects::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(30, 30, 46, 0.6); /* dark overlay */
     z-index: -1;
 }
+
 
 .projects-box {
     display: grid;
