@@ -261,23 +261,21 @@ section {
     width: 0;
     height: 100%;
     z-index: -1;
-    background: var(--bg-color);
-    overflow: hidden;
-    transition: .5s;
+    background: rgba(255, 0, 122, 0.05); /* soft hot pink overlay */
+    transition: width 0.5s ease-in-out;
 }
 
-.homne-sci a:hover {
+.home-sci a:hover {
+    color: var(--main-color);
+    background-color: rgba(255, 0, 122, 0.15); /* More solid inside */
     box-shadow: 0 0 12px rgba(255, 0, 122, 0.6),
                 0 0 24px rgba(255, 0, 122, 0.4),
                 0 0 36px rgba(255, 0, 122, 0.2);
-    background-color: rgba(255, 0, 122, 0.15); /* More solid inside */
     transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
-}
+
 .home-sci a:hover::before {
     width: 100%;
-    background: rgba(255, 0, 122, 0.05); /* soft hot pink overlay */
-    opacity: 1;
 }
 
 .home-imgHover {
@@ -489,8 +487,8 @@ span {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(15px); 
+    background: rgba(30, 30, 46, 0.7); /* Matches --bg-color, cleaner dark */
+    backdrop-filter: blur(20px); 
     z-index: -1;
 }
 
@@ -521,20 +519,36 @@ span {
 }
 
 .projects-content {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 2rem;
+    background: rgba(255, 255, 255, 0.05); /* soft glass effect */
+    border-left: 3px solid var(--main-color); /* neon cyan line on the left */
     border-radius: 10px;
-    transition: transform 0.3s ease-in-out;
+    padding: 2rem;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px); /* Safari support */
+    box-shadow: 0 0 6px rgba(0, 255, 209, 0.15); /* subtle cyan glow */
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
 }
+
 .projects-content:hover {
-    transform: translateY(-5px);
+    background: rgba(37, 38, 61, 0.95); /* matches second-bg-color, more solid */
+    transform: translateY(-6px);
+    box-shadow: 0 0 12px rgba(255, 0, 122, 0.3),
+                0 0 24px rgba(255, 0, 122, 0.2),
+                0 0 36px rgba(255, 0, 122, 0.1);
+    border-left: 3px solid var(--accent-color); /* switch neon cyan to pink on hover */
 }
 
 .projects-content h3 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: var(--main-color);
+    font-size: 2.2rem;
+    margin-bottom: 1.2rem;
+    color: var(--accent-color);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    text-shadow: 0 0 8px rgba(255, 0, 122, 0.4);
 }
+
 
 .projects-content p {
     font-size: 1.6rem;
