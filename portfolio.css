@@ -534,7 +534,9 @@ span {
     font-size: 2rem;
     margin-bottom: 1rem;
     color: var(--accent-color);
-    text-shadow: 2px 2px 10px rgba(255, 0, 122, 0.8); /* Neon glow effect */
+    text-shadow: 0 0 6px rgba(255, 255, 255, 0.6), 
+             0 0 12px rgba(255, 255, 255, 0.4);
+
 }
 
 .projects-content p {
