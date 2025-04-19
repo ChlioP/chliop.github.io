@@ -503,7 +503,7 @@ span {
 }
 
 .projects a{
-    color: #3D550C;
+    color: var(--accent-color);
 }
 
 .projects ul li {
