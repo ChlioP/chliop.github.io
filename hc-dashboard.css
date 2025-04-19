@@ -58,7 +58,7 @@ body {
 }
 
 .project-section h2 {
-  color: var(--main-color);
+  color: darkblue;
   font-size: 1.65rem;
   margin-bottom: 1.2rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
