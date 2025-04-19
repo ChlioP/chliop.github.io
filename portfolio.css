@@ -668,18 +668,12 @@ span {
     width: 100%;
 }
 .light-mode .projects-content {
-  background: rgba(0, 0, 0, 0.05); /* soft gray bg */
   color: var(--bg-color);
   border-left: 3px solid var(--accent-color);
 }
 
 .light-mode .projects-content h3 {
   color: var(--accent-color);
-}
-
-.light-mode .projects::before {
-  background: rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(20px);
 }
 
 .skills {
