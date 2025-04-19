@@ -669,7 +669,7 @@ span {
 }
 .light-mode .projects-content {
   background: rgba(0, 0, 0, 0.05); /* soft gray bg */
-  color: var(--text-color);
+  color: var(--bg-color);
   border-left: 3px solid var(--accent-color);
 }
 
