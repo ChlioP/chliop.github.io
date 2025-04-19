@@ -954,3 +954,17 @@ form button:hover::before {
         transform: translate(-50%, -50%) rotate(360deg);
     }
 }
+.education-content .content:hover,
+.projects-content .content:hover {
+    box-shadow: 0 0 12px rgba(255, 0, 122, 0.6), 
+                0 0 24px rgba(255, 0, 122, 0.4),
+                0 0 36px rgba(255, 0, 122, 0.2);
+    border-color: rgba(255, 0, 122, 0.6);
+    transition: box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.education-content .content:hover::before,
+.projects-content .content:hover::before {
+    background: rgba(255, 0, 122, 0.05); /* soft hot pink overlay */
+    opacity: 1;
+}
