@@ -578,7 +578,7 @@ span {
 .projects h2 {
     font-size: 4rem;
     margin-bottom: 3rem;
-    color: var(--main-color);
+    color: var(--accent-color);
 }
 
 .projects ul li {
@@ -597,7 +597,7 @@ span {
 
 .projects-content {
     background: rgba(255, 255, 255, 0.05); /* soft glass effect */
-    border-left: 3px solid var(--main-color); /* neon cyan line on the left */
+    border-left: 3px solid var(--accent-color); /* neon cyan line on the left */
     border-radius: 10px;
     padding: 2rem;
     backdrop-filter: blur(6px);
@@ -609,13 +609,13 @@ span {
 }
 @keyframes pulseGlow {
   0% {
-    box-shadow: 0 0 8px var(--accent-color);
+    box-shadow: 0 0 8px var(--main-color);
   }
   50% {
-    box-shadow: 0 0 15px var(--accent-color);
+    box-shadow: 0 0 15px var(--main-color);
   }
   100% {
-    box-shadow: 0 0 8px var(--accent-color);
+    box-shadow: 0 0 8px var(--main-color);
   }
 }
 .projects-content:hover {
@@ -624,14 +624,14 @@ span {
     box-shadow: 0 0 12px rgba(255, 0, 122, 0.3),
                 0 0 24px rgba(255, 0, 122, 0.2),
                 0 0 36px rgba(255, 0, 122, 0.1);
-    border-left: 3px solid var(--accent-color); /* switch neon cyan to pink on hover */
+    border-left: 3px solid var(--main-color); /* switch neon cyan to pink on hover */
     animation: pulseGlow 1.5s infinite;
 }
 
 .projects-content h3 {
     font-size: 2.2rem;
     margin-bottom: 1.2rem;
-    color: var(--accent-color);
+    color: var(--main-color);
     letter-spacing: 0.5px;
     text-transform: uppercase;
     text-shadow: 0 0 8px rgba(255, 0, 122, 0.4);
@@ -641,16 +641,6 @@ span {
 .projects-content p {
     font-size: 1.6rem;
 }
-/* .projects-box .projects-content::before {
-    content:'';
-    position: absolute;
-    top: 0;
-    left: -1.1rem;
-    width: 2rem;
-    height: 2rem;
-    background: var(--text-color);
-    border-radius: 50%;
-} */
 
 .projects-content .content {
     position: relative;
@@ -662,7 +652,7 @@ span {
 
 .projects-content .content h3 {
     font-size: 2rem;
-     color: var(--accent-color);
+     color: var(--main-color);
 }
 
 .projects-content .content p{
@@ -675,12 +665,12 @@ span {
   display: inline-block;
   margin-top: 1rem;
   font-size: 1.6rem;
-  color: var(--main-color);
+  color: var(--accent-color);
   transition: color 0.3s ease;
 }
 
 .projects-content .content a:hover {
-  color: var(--accent-color);
+  color: var(--main-color);
 }
 
 .projects-content .content ul li{
@@ -695,7 +685,7 @@ span {
     left: 0;
     width: 0;
     height: 100%;
-    background: var(--main-color);
+    background: var(--accent-color);
     z-index: -1;
     transition: .5s;
 }
