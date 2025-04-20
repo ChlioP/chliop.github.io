@@ -533,15 +533,18 @@ span {
     position: absolute;
     inset: 0;
     background: url('Experiences.png') no-repeat center/cover;
-    filter: blur(3px); /* strong blur effect */
-    transform: scale(1.05); /* slight scale to avoid blur edge cutoff */
-    z-index: -1;
-    opacity: 0.3; /* you can lower it more if needed */
+    filter: blur(2px); /* softer blur */
+    transform: scale(1.02); /* slight scale to avoid edge cutoff */
+    z-index: -2;
+    opacity: 0.5; /* make image more visible */
 }
+
 .projects::after {
     content: "";
     position: absolute;
     inset: 0;
+    background: rgba(255, 255, 255, 0.2); /* subtle white overlay for light effect */
+    backdrop-filter: blur(3px); /* subtle additional blur */
     z-index: -1;
 }
 
