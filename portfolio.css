@@ -583,7 +583,7 @@ span {
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(6px); /* Safari support */
     box-shadow: 0 0 6px rgba(0, 255, 209, 0.15); /* subtle cyan glow */
-    transition: all 0.3s ease-in-out;
+    transition: background 0.4s ease, box-shadow 0.4s ease, border 0.4s ease;
     position: relative;
     overflow: hidden;
 }
@@ -686,6 +686,19 @@ span {
 .light-mode .projects-content {
   color: var(--bg-color);
   border-left: 3px solid var(--accent-color);
+}
+
+.light-mode .projects-content:hover {
+  background: rgba(255, 255, 255, 0.95); /* match light background */
+  box-shadow: 0 0 12px rgba(58, 12, 163, 0.3),
+              0 0 24px rgba(58, 12, 163, 0.2),
+              0 0 36px rgba(58, 12, 163, 0.1); /* soft purple glow */
+  border-left: 3px solid var(--accent-color); /* purple border */
+  animation: none; /* optional: disable pulse glow animation for a cleaner look */
+}
+
+.light-mode .projects-content .content {
+  border: 0.2rem solid var(--accent-color); /* inner border also purple */
 }
 
 .light-mode .projects-content .content p,
