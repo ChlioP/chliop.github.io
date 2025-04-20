@@ -203,12 +203,6 @@ section {
   text-align: left;
 }
 
-.light-mode .home-content .text-animate h3 {
-  -webkit-text-stroke: 0.7px var(--accent-color); /* Adjust stroke to purple/navy in light mode */
-  background-image: linear-gradient(to right, var(--accent-color), var(--main-color));
-}
-
-
 .home-content p {
     font-size: 1.75rem;
     margin: 2rem 0 4rem;
@@ -247,7 +241,7 @@ section {
 .light-mode .home-content p,
 .light-mode .home-content h1,
 .light-mode .home-content h3 {
-  color: #1E1E2E; /* Ensure strong dark color for readability */
+  color: var(--text-color); /* Ensure strong dark color for readability */
   text-shadow: 1px 1px 6px rgba(255, 255, 255, 0.8); /* Glow behind text */
 }
 
