@@ -5,11 +5,14 @@ function toggleMobileMenu(menu) {
 const toggleBtn = document.getElementById('theme-toggle');
 const root = document.documentElement;
 
-toggleBtn.addEventListener('click', () => {
-  root.classList.toggle('light-mode');
-  toggleBtn.textContent = root.classList.contains('light-mode') ? '☀️' : '🌙';
-});
+// Set initial icon to 🌙 (dark mode)
+toggleBtn.textContent = '🌙';
 
+// Toggle between dark and light modes
+toggleBtn.addEventListener('click', () => {
+  const isLight = root.classList.toggle('light-mode');
+  toggleBtn.textContent = isLight ? '☀️' : '🌙';
+});
 
 const form = document.querySelector("form");
 const fullName = document.getElementById("name");
