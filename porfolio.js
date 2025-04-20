@@ -5,14 +5,24 @@ function toggleMobileMenu(menu) {
 const toggleBtn = document.getElementById('theme-toggle');
 const root = document.documentElement;
 
-// Set initial icon to 🌙 (dark mode)
-toggleBtn.textContent = '🌙';
+if (toggleBtn) {
+  document.addEventListener("DOMContentLoaded", () => {
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "light") {
+      document.documentElement.classList.add("light-mode");
+      toggleBtn.textContent = '☀️';
+    } else {
+      toggleBtn.textContent = '🌙';
+    }
+  });
 
-// Toggle between dark and light modes
-toggleBtn.addEventListener('click', () => {
-  const isLight = root.classList.toggle('light-mode');
-  toggleBtn.textContent = isLight ? '☀️' : '🌙';
-});
+  toggleBtn.addEventListener('click', () => {
+    const isLight = document.documentElement.classList.toggle('light-mode');
+    toggleBtn.textContent = isLight ? '☀️' : '🌙';
+    localStorage.setItem("theme", isLight ? "light" : "dark");
+  });
+}
+
 
 const form = document.querySelector("form");
 const fullName = document.getElementById("name");
@@ -37,11 +47,11 @@ function sendEmail() {
     }).then(response => {
         if (response === "OK") {
             Swal.fire({
-                title: "Success!",
-                text: "Your message has been sent!",
-                icon: "success"
+              title: 'Thank you!',
+              text: 'Your message has been sent successfully 💌',
+              icon: 'success',
+              confirmButtonColor: '#00FFD1'
             });
-
             form.reset(); // Clear the form after success
         } else {
             Swal.fire({
