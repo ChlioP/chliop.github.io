@@ -1,8 +1,10 @@
+function toggleMenu() {
+  const hamburger = document.getElementById("hamburger-icon");
+  const mobileMenu = document.querySelector(".mobile-menu");
 
-  function toggleMenu() {
-    document.getElementById('hamburger-icon').classList.toggle('open');
-    document.querySelector('.mobile-menu').classList.toggle('open');
-  }
+  hamburger.classList.toggle("open");
+  mobileMenu.classList.toggle("open");
+}
 
 const toggleBtn = document.getElementById('theme-toggle');
 const root = document.documentElement;
