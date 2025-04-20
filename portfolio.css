@@ -23,9 +23,9 @@
 .light-mode {
   --bg-color: #f5f5f5;
   --second-bg-color: #ffffff;
-  --text-color: #1E1E2E;
+  --text-color: #1a1a40; /* dark navy*/
   --main-color: #FF6B6B; /* coral tone for light mode */
-  --accent-color: #3A0CA3; /* navy */
+  --accent-color: #3A0CA3; /* deep indigo */
   --overlay-color: rgba(255, 255, 255, 0.3);
 }
 
