@@ -617,7 +617,7 @@ span {
 .projects-content p {
     font-size: 1.6rem;
 }
-.projects-box .projects-content::before {
+/* .projects-box .projects-content::before {
     content:'';
     position: absolute;
     top: 0;
@@ -626,7 +626,7 @@ span {
     height: 2rem;
     background: var(--text-color);
     border-radius: 50%;
-}
+} */
 
 .projects-content .content {
     position: relative;
@@ -645,6 +645,18 @@ span {
     font-size: 1.6rem;
     padding-top: .5rem;
     color: white;
+}
+
+.projects-content .content a {
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 1.6rem;
+  color: var(--main-color);
+  transition: color 0.3s ease;
+}
+
+.projects-content .content a:hover {
+  color: var(--accent-color);
 }
 
 .projects-content .content ul li{
@@ -672,9 +684,16 @@ span {
   border-left: 3px solid var(--accent-color);
 }
 
-.light-mode .projects-content h3 {
-  color: var(--accent-color);
+.light-mode .projects-content .content p,
+.light-mode .projects-content .content ul li {
+  color: #1E1E2E; /* dark text for light mode */
 }
+
+.light-mode .projects-content .content h3 {
+  color: var(--accent-color); /* already set but good for consistency */
+  text-shadow: none;
+}
+
 
 .skills {
     padding: 8rem 9% 5rem;
@@ -948,6 +967,7 @@ form button:hover::before {
     text-align: center;
     padding: 2rem;
     background: var(--main-color);
+    box-shadow: 0 0 10px var(--main-color);
     color: white;
 }
 @keyframes fadeIn {
