@@ -542,7 +542,6 @@ span {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(30, 30, 46, 0.6); /* dark overlay */
     z-index: -1;
 }
 
