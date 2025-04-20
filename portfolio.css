@@ -496,7 +496,7 @@ span {
     left: -1.1rem;
     width: 2rem;
     height: 2rem;
-    background: var(--main-color);
+    background: var(--accent-color);
     border-radius: 50%;
 }
 
