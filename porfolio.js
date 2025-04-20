@@ -1,7 +1,9 @@
-function toggleMobileMenu(menu) {
-    console.log('Hamburger icon clicked'); // Log a message to indicate the function is being called
-    menu.classList.toggle('open');
-}
+
+  function toggleMenu() {
+    document.getElementById('hamburger-icon').classList.toggle('open');
+    document.querySelector('.mobile-menu').classList.toggle('open');
+  }
+
 const toggleBtn = document.getElementById('theme-toggle');
 const root = document.documentElement;
 
