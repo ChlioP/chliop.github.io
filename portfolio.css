@@ -187,19 +187,27 @@ section {
     width: 32.8rem;
 }
 
+/* Restore and enhance animated text effect in light mode */
 .home-content .text-animate h3 {
-    font-size: 3.2rem;
-    font-weight: 700;
-    color: transparent;
-/*     text-shadow: 2px 2px 10px rgba(255, 0, 122, 0.5); */
-    -webkit-text-stroke: .7px var(--main-color) ;
-    background-image: linear-gradient(to right, var(--main-color), var(--accent-color));
-    background-repeat: no-repeat;
-    -webkit-background-clip: text;
-    background-position: 0 0;
-    animation: homeBgText 6s linear infinite;
-    animation-delay: 2s;
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: transparent;
+  -webkit-text-stroke: 0.7px var(--main-color);
+  background-image: linear-gradient(to right, var(--main-color), var(--accent-color));
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  animation: homeBgText 6s linear infinite;
+  animation-delay: 2s;
+  text-align: left;
 }
+
+.light-mode .home-content .text-animate h3 {
+  -webkit-text-stroke: 0.7px var(--accent-color); /* Adjust stroke to purple/navy in light mode */
+  background-image: linear-gradient(to right, var(--accent-color), var(--main-color));
+}
+
 
 .home-content p {
     font-size: 1.75rem;
