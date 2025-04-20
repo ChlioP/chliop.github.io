@@ -44,7 +44,7 @@ body, .projects, .education, .skills, .contact {
 }
 
 html {
-    font-size: 70%;
+    font-size: 80%;
     overflow-x: hidden;
 }
 
@@ -415,7 +415,7 @@ span {
     background: linear-gradient(135deg, rgba(0, 255, 209, 0.3), rgba(255, 0, 122, 0.3));
     backdrop-filter: blur(8px);
     position: relative;
-    color: white;
+    color: var(--text-color);
     text-align: center;
     display: flex;
     justify-content: center;
@@ -515,6 +515,8 @@ span {
     font-size: 1.6rem;
     padding-top: .5rem;
     color: var(--text-color);
+    list-style-position: inside;
+    padding-left: 1rem;
 }
 
 .projects {
