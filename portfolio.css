@@ -238,13 +238,6 @@ section {
   box-shadow: 0 0 12px rgba(58, 12, 163, 0.15); /* Optional subtle glow */
 }
 
-.light-mode .home-content p,
-.light-mode .home-content h1,
-.light-mode .home-content h3 {
-  color: var(--text-color); /* Ensure strong dark color for readability */
-  text-shadow: 1px 1px 6px rgba(255, 255, 255, 0.8); /* Glow behind text */
-}
-
 .light-mode .home-sci a {
   background-color: rgba(255, 255, 255, 0.3); /* Softer button background */
   border: .2rem solid var(--accent-color);
