@@ -5,7 +5,12 @@ function toggleMenu() {
   hamburger.classList.toggle("open");
   mobileMenu.classList.toggle("open");
 }
-
+  document.querySelectorAll(".mobile-menu a").forEach(link => {
+    link.addEventListener("click", () => {
+      document.getElementById("hamburger-icon").classList.remove("open");
+      document.querySelector(".mobile-menu").classList.remove("open");
+    });
+  });
 const toggleBtn = document.getElementById('theme-toggle');
 const root = document.documentElement;
 
