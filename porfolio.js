@@ -1,11 +1,14 @@
+// function toggleMobileMenu(menu) {
+//   const hamburger = menu;
+//   const mobileMenu = document.querySelector(".mobile-menu");
+
+//   hamburger.classList.toggle("open");
+//   mobileMenu.classList.toggle("open");
+// }
 function toggleMobileMenu(menu) {
-  const hamburger = menu;
-  const mobileMenu = document.querySelector(".mobile-menu");
-
-  hamburger.classList.toggle("open");
-  mobileMenu.classList.toggle("open");
-}
-
+     console.log('Hamburger icon clicked'); // Log a message to indicate the function is being called
+     menu.classList.toggle('open');
+ }
   document.querySelectorAll(".mobile-menu a").forEach(link => {
     link.addEventListener("click", () => {
       document.getElementById("hamburger-icon").classList.remove("open");
