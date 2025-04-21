@@ -1,10 +1,11 @@
-function toggleMenu() {
-  const hamburger = document.getElementById("hamburger-icon");
+function toggleMobileMenu(menu) {
+  const hamburger = menu;
   const mobileMenu = document.querySelector(".mobile-menu");
 
   hamburger.classList.toggle("open");
   mobileMenu.classList.toggle("open");
 }
+
   document.querySelectorAll(".mobile-menu a").forEach(link => {
     link.addEventListener("click", () => {
       document.getElementById("hamburger-icon").classList.remove("open");
