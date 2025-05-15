@@ -119,7 +119,7 @@ body {
     transform: rotate(45deg) translate(-6px, -8px);
 }
   
-.mobile-menu {
+/* .mobile-menu {
     display: none;
     position: absolute;
     top: 100%;
@@ -149,8 +149,20 @@ body {
 .open .mobile-menu {
     display: flex;
 }
-
-
+ */
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    height: calc(100vh - 50px);
+    width: 100%;
+}
+  
+.mobile-menu li {
+    margin-bottom: 10px;
+    background-color: #d4a373;
+}
 @media only screen and (max-width: 600px) {
 header nav {
     display: none; 
