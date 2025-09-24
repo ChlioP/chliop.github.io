@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Breast Cancer Dashboard - Chliona Pham</title>
+
+  <!-- Fonts & CSS (reuse your existing styles) -->
+  <link rel="stylesheet" href="hc-dashboard.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Signika+Negative:wght@300..700&display=swap" rel="stylesheet"/>
+</head>
+
+<body>
+  <section class="project-detail">
+    <div class="container">
+      <h1 class="project-title">Breast Cancer – Interactive Analytics Dashboard</h1>
+      <p class="subtitle">Built with Tableau; data from Kaggle’s Breast Cancer Wisconsin (Diagnostic) dataset</p>
+
+      <div class="project-section">
+        <h2>Dashboard Preview</h2>
+        <img src="bc-overview.png" alt="Overview dashboard" class="dashboard-preview"/>
+        <img src="bc-overview-1.png" alt="Overview dashboard (KPIs, class balance, mini correlation heatmap)" class="dashboard-preview"/>
+      </div>
+
+      <div class="project-section">
+        <div class="project-intro">
+          <p>
+            This project explores diagnostic differences between <strong>benign</strong> and <strong>malignant</strong> tumors using
+            size features (radius, perimeter, area), <strong>texture</strong>, and <strong>irregularity</strong> features
+            (concavity, compactness, concave points). The goal is to present a clean analytical story suitable for a portfolio:
+            a quick Overview, deeper Feature Exploration, a Patient-level Detail view, and an executive-style Key Insights page.
+          </p>
+        </div>
+      </div>
+
+      <div class="project-section">
+        <h2>Tools & Technologies</h2>
+        <ul>
+          <li>Tableau Public (interactive analytics & dashboarding)</li>
+          <li>Python (pandas) / Google Colab for correlation prep</li>
+          <li>SQL (PostgreSQL) for table schema & EDA queries (optional)</li>
+          <li>VS Code for project packaging & GitHub publishing</li>
+        </ul>
+      </div>
+
+      <div class="project-section">
+        <h2>Dashboard Pages</h2>
+        <ul>
+          <li><strong>Overview</strong> – KPIs, diagnosis distribution, mini correlation heatmap</li>
+          <li><strong>Feature Exploration</strong> – scatter (size vs irregularity), box plots, histograms</li>
+          <li><strong>Patient-Level Tumor Characteristics</strong> – filterable table (ID, diagnosis, key features)</li>
+          <li><strong>Key Insights</strong> – one-page executive summary with annotated visuals</li>
+        </ul>
+      </div>
+
+      <div class="project-section">
+        <h2>Key Insights</h2>
+        <ul>
+          <li><strong>Class balance:</strong> ~37% malignant / ~63% benign</li>
+          <li><strong>Size differences:</strong> malignant tumors are generally larger (e.g., radius, area)</li>
+          <li><strong>Variability:</strong> malignant shows greater spread (higher SD)</li>
+          <li><strong>Irregularity:</strong> concavity, compactness, concave points separate classes strongly</li>
+          <li><strong>Correlation:</strong> radius–perimeter–area are highly correlated (partly redundant)</li>
+        </ul>
+      </div>
+
+      <div class="project-section">
+        <h2>Reproducibility</h2>
+        <p>
+          The 6-feature correlation heatmap is generated in Python and imported into Tableau:
+        </p>
+        <ol>
+          <li>Run <code>notebooks/correlation_mini.ipynb</code> (or a Colab notebook) to produce <code>data/correlation_matrix_mini.csv</code>.</li>
+          <li>In Tableau: connect to the CSV → build heatmap (Feature1 on Columns, Feature2 on Rows, Color = Correlation).</li>
+          <li>All other visuals connect directly to the Kaggle dataset.</li>
+        </ol>
+      </div>
+
+      <div class="project-section">
+        <h2>Resources</h2>
+        <ul>
+          <li><a href="https://www.kaggle.com/datasets/nancyalaswad90/breast-cancer-dataset/data" target="_blank" rel="noopener">Dataset on Kaggle</a></li>
+          <li><a href="https://public.tableau.com/app/profile/chliona.pham/viz/breast_cancer_17586781404190/Overview" target="_blank" rel="noopener">View Tableau Dashboard</a></li>
+        </ul>
+      </div>
+
+      <div class="project-section">
+        <a href="index.html" class="btn">← Back to Portfolio</a>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
