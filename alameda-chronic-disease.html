@@ -1,0 +1,287 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head>
+        <meta charset="UTF-8" /> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+        <title>Alameda County Chronic Disease Dashboard - Chliona Pham</title> 
+        <link rel="stylesheet" href="hc-dashboard.css" /> 
+        <link rel="preconnect" href="https://fonts.googleapis.com"/> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/> 
+        <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Signika+Negative:wght@300..700&display=swap" rel="stylesheet"/> 
+    </head> <body> <section class="project-detail"> 
+        <div class="container"> 
+            <h1 class="project-title">Alameda County Chronic Disease Dashboard</h1> 
+            <p class="subtitle"> Built with React using CDC PLACES data for Alameda County, comparing 2018 and 2022 chronic disease patterns </p>
+            <div class="project-section">
+                <div class="project-intro">
+                <p>
+                    This project analyzes chronic disease patterns in Alameda County from 2018 to 2022 using CDC PLACES. It focuses on ten adult chronic conditions and tracks how the county health profile shifted toward metabolic and cardiovascular risk after the COVID period.
+                </p>
+                <p>
+                    The analysis is guided by two main questions:
+                </p>
+                <ul>
+                    <li>How did chronic disease prevalence and composition change between 2018 and 2022</li>
+                    <li>What can county level social determinant data tell us about these changes</li>
+                </ul>
+                <p>
+                    The dashboard is designed to help public health and healthcare teams see how risk moved, not only whether total burden increased.
+                </p>
+                </div>
+            </div>
+
+            <div class="project-section">
+                <h2>Key Cards</h2>
+                <ul>
+                <li><strong>High cholesterol</strong> 32.5 percent, new in 2022</li>
+                <li><strong>High blood pressure</strong> 26.6 percent, new in 2022</li>
+                <li><strong>Obesity</strong> 20.1 percent, declined but still high</li>
+                <li><strong>Average prevalence</strong> 8.0 percent across seven shared diseases</li>
+                </ul>
+                <p>
+                Key finding  
+                Alameda County chronic disease burden stayed near 8 percent from 2018 to 2022, yet the mix of diseases shifted toward metabolic and cardiovascular risk. This signals a new form of health crisis that requires early and targeted intervention.
+                </p>
+            </div>
+
+            <div class="project-section">
+                <h2>Disease Prevalence Comparison</h2>
+                <p>
+                The dashboard compares seven shared conditions across 2018 and 2022
+                </p>
+                <ul>
+                <li>Obesity 24.6 percent to 20.1 percent, change about minus 4.5 percentage points</li>
+                <li>Asthma 8.8 percent to 9.5 percent, change about plus 0.7 percentage points</li>
+                <li>Diabetes 8.9 percent to 9.3 percent, change about plus 0.4 percentage points</li>
+                <li>Cancer 5.4 percent to 6.3 percent, change about plus 0.9 percentage points</li>
+                <li>COPD 4.4 percent to 4.9 percent, change about plus 0.5 percentage points</li>
+                <li>Heart disease 4.4 percent to 4.3 percent, slight decline</li>
+                <li>Stroke 2.8 percent to 2.7 percent, slight decline</li>
+                </ul>
+                <p>
+                Mean prevalence across these seven shared diseases rose modestly from 8.2 percent in 2018 to 9.1 percent in 2022.
+                </p>
+            </div>
+
+            <div class="project-section">
+                <h2>Prevalence Distribution and Categories</h2>
+                <p>
+                The dashboard includes a distribution view that groups conditions into three categories
+                </p>
+                <ul>
+                <li><strong>Low</strong> under 10 percent, community baseline</li>
+                <li><strong>Medium</strong> 10 to 20 percent, monitoring needed</li>
+                <li><strong>High</strong> over 20 percent, urgent intervention</li>
+                </ul>
+                <p>
+                In 2018, most conditions stay in the low and medium range. By 2022, high cholesterol and high blood pressure appear in the high range, which changes the overall risk profile.
+                </p>
+            </div>
+
+            <div class="project-section">
+                <h2>Statistical Analysis</h2>
+                <ul>
+                <li>
+                    <strong>Chi square test</strong> p less than 0.001  
+                    Strong evidence that diseases moved across prevalence categories toward the high group.
+                </li>
+                <li>
+                    <strong>Paired t test on seven shared diseases</strong> t equals 0.40, p equals 0.706  
+                    No statistically significant change in mean prevalence across shared diseases, which supports the idea of a compositional shift rather than a simple increase.
+                </li>
+                <li>
+                    <strong>Mean prevalence</strong> 8.2 percent in 2018 to 9.1 percent in 2022, modest overall increase.
+                </li>
+                </ul>
+            </div>
+
+            <div class="project-section">
+                <h2>Disease Category Trends</h2>
+                <p>
+                The dashboard groups conditions into four categories and compares average prevalence
+                </p>
+                <ul>
+                <li>Metabolic, obesity, high cholesterol, high blood pressure, diabetes</li>
+                <li>Respiratory, asthma, COPD</li>
+                <li>Cardiovascular, heart disease, stroke</li>
+                <li>Cancer, cancer prevalence</li>
+                </ul>
+                <p>
+                Average prevalence for metabolic conditions increases sharply between 2018 and 2022, driven by the appearance of high cholesterol and high blood pressure. Other categories show smaller changes and remain lower in absolute terms.
+                </p>
+            </div>
+
+            <div class="project-section">
+                <h2>High Risk Predictors</h2>
+                <p>
+                A logistic model identifies which conditions are most likely to appear in the high prevalence group
+                </p>
+                <ul>
+                <li>High cholesterol, odds ratio 3.8, confidence interval 2.9 to 4.9</li>
+                <li>High blood pressure, odds ratio 3.2, confidence interval 2.5 to 4.1</li>
+                <li>Obesity, odds ratio 2.5, confidence interval 1.9 to 3.3</li>
+                <li>Diabetes, odds ratio 1.8, confidence interval 1.4 to 2.4</li>
+                </ul>
+                <p>
+                High risk cluster  
+                The co occurrence of obesity, high cholesterol and high blood pressure creates a metabolic syndrome cluster that calls for integrated screening, counseling and follow up.
+                </p>
+            </div>
+
+            <div class="project-section">
+                <h2>Social Determinants of Health Context</h2>
+                <p>
+                The dashboard adds a small table of county level indicators to frame the health trends
+                </p>
+                <table class="sdoh-table">
+                <thead>
+                    <tr>
+                    <th>Indicator</th>
+                    <th>2018</th>
+                    <th>2022</th>
+                    <th>Change</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <td>Median owner cost per month</td>
+                    <td>$2,806</td>
+                    <td>$3,547</td>
+                    <td>+26.4 percent</td>
+                    </tr>
+                    <tr>
+                    <td>Median income</td>
+                    <td>$92,574</td>
+                    <td>$122,488</td>
+                    <td>+32.3 percent</td>
+                    </tr>
+                    <tr>
+                    <td>Median rent</td>
+                    <td>$2,563.42</td>
+                    <td>$2,569.91</td>
+                    <td>+0.3 percent</td>
+                    </tr>
+                    <tr>
+                    <td>Poverty rate</td>
+                    <td>6.8 percent</td>
+                    <td>5.5 percent</td>
+                    <td>-19.1 percent</td>
+                    </tr>
+                    <tr>
+                    <td>Food insecurity</td>
+                    <td>9.8 percent</td>
+                    <td>11.4 percent</td>
+                    <td>+16.3 percent</td>
+                    </tr>
+                </tbody>
+                </table>
+                <p>
+                SDOH paradox  
+                Income rises and poverty falls between 2018 and 2022, yet metabolic health worsens. Food insecurity also increases. This pattern suggests that county level averages hide neighbourhood disparities and that local context needs a finer scale view.
+                </p>
+            </div>
+
+            <div class="project-section">
+                <h2>Conditions by Year</h2>
+                <h3>2018 conditions, PLACES</h3>
+                <ul>
+                    <li>Obesity 24.6 percent</li>
+                    <li>Diabetes 8.9 percent</li>
+                    <li>Asthma 8.8 percent</li>
+                    <li>COPD 4.4 percent</li>
+                    <li>Heart disease 4.4 percent</li>
+                    <li>Stroke 2.8 percent</li>
+                    <li>Cancer 5.4 percent</li>
+                    <li>Kidney disease 2.8 percent</li>
+                </ul>
+
+                <h3>2022 conditions, PLACES</h3>
+                <ul>
+                    <li>High cholesterol 32.5 percent</li>
+                    <li>High blood pressure 26.6 percent</li>
+                    <li>Obesity 20.1 percent</li>
+                    <li>Diabetes 9.3 percent</li>
+                    <li>Asthma 9.5 percent</li>
+                    <li>COPD 4.9 percent</li>
+                    <li>Heart disease 4.3 percent</li>
+                    <li>Stroke 2.7 percent</li>
+                    <li>Cancer 6.3 percent</li>
+                </ul>
+            </div>
+
+            <div class="project-section">
+                <h2>Timeline and Context</h2>
+                    <ul>
+                    <li><strong>2018</strong> baseline chronic disease profile before the COVID period</li>
+                    <li><strong>COVID period</strong> screening disruptions and possible changes in survey behaviour and model inputs</li>
+                    <li><strong>2022</strong> updated disease profile with new metabolic indicators added by PLACES</li>
+                    </ul>
+            </div>
+
+            <div class="project-section">
+                <h2>Action Plan From the Dashboard</h2>
+                <ul>
+                    <li>
+                        <strong>Launch countywide metabolic screening</strong>  
+                        Expand cholesterol and blood pressure screening through mobile units and clinics.
+                    </li>
+                    <li>
+                        <strong>Implement community wellness programs</strong>  
+                        Support neighbourhood based nutrition education and low cost exercise options.
+                    </li>
+                    <li>
+                        <strong>Develop neighbourhood health maps</strong>  
+                        Integrate census tract data to identify high risk communities and target outreach.
+                    </li>
+                    <li>
+                        <strong>Establish early warning systems</strong>  
+                        Create simple monitoring rules in dashboards to flag emerging trends.
+                    </li>
+                </ul>
+                <p>
+                Data source  
+                CDC PLACES, Population Level Analysis and Community Estimates. Methodology, small area estimation using BRFSS data. Kidney disease is measured only in 2018. High cholesterol and high blood pressure are introduced in 2022.
+                </p>
+            </div>
+
+            <div class="project-section">
+                <h2>Tools and Workflow</h2>
+                <ul>
+                    <li>Python with pandas, NumPy and SciPy for data cleaning, EDA and tests</li>
+                    <li>Jupyter notebooks for a clear analysis pipeline and documentation</li>
+                    <li>React, TypeScript and Vite for the chronic disease dashboard</li>
+                    <li>Recharts for all charts and KPI visual elements</li>
+                    <li>GitHub and GitHub Pages for version control and deployment</li>
+                </ul>
+                <p>
+                The notebooks follow a four step structure, from cleaning and merging to EDA and statistical analysis, and export tidy CSVs that the React app reads.
+                </p>
+            </div>
+
+            <div class="project-section">
+                <h2>Resources</h2>
+                <ul>
+                    <li>
+                        <a href="https://www.cdc.gov/places/index.html" target="_blank" rel="noopener">CDC PLACES project overview</a>
+                    </li>
+                    <li>
+                        <a href="https://chliop.github.io/alameda-chronic-disease-dashboard/" target="_blank" rel="noopener">View Alameda County Chronic Disease Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/ChlioP/alameda-chronic-disease-analysis" target="_blank" rel="noopener">View analysis code and notebooks on GitHub</a>
+                    </li>
+                    <li>
+                        <a href="Chronic-Diseases-Report.pdf" target="_blank" rel="noopener">Read the full Chronic Diseases report (PDF)</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="project-section">
+                <a href="index.html" class="btn">← Back to Portfolio</a>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
+<!DOCTYPE html>
