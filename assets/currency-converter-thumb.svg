@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200" role="img" aria-label="Currency Converter thumbnail">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#5b21b6"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#eef2ff" stop-opacity="0.92"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="1200" fill="url(#bg)"/>
+  <circle cx="1030" cy="160" r="150" fill="#ffffff" opacity="0.1"/>
+  <circle cx="160" cy="1040" r="200" fill="#ffffff" opacity="0.08"/>
+
+  <rect x="140" y="190" width="920" height="800" rx="44" fill="url(#panel)"/>
+  <text x="200" y="330" font-family="Chakra Petch, Arial, sans-serif" font-size="66" font-weight="700" fill="#1f2937">Currency Converter</text>
+
+  <rect x="200" y="420" width="360" height="120" rx="20" fill="#dbeafe"/>
+  <rect x="640" y="420" width="360" height="120" rx="20" fill="#c7d2fe"/>
+  <text x="235" y="500" font-family="Chakra Petch, Arial, sans-serif" font-size="54" font-weight="700" fill="#1e40af">USD</text>
+  <text x="675" y="500" font-family="Chakra Petch, Arial, sans-serif" font-size="54" font-weight="700" fill="#312e81">EUR</text>
+
+  <path d="M580 480 L620 480 L620 450 L680 505 L620 560 L620 530 L580 530 Z" fill="#4338ca"/>
+
+  <text x="200" y="660" font-family="Chakra Petch, Arial, sans-serif" font-size="116" font-weight="700" fill="#111827">1,000.00</text>
+  <text x="200" y="750" font-family="Chakra Petch, Arial, sans-serif" font-size="56" fill="#374151">Real-time exchange preview</text>
+
+  <rect x="200" y="810" width="800" height="95" rx="16" fill="#4f46e5"/>
+  <text x="470" y="872" font-family="Chakra Petch, Arial, sans-serif" font-size="44" font-weight="700" fill="#ffffff">Convert Now</text>
+</svg>
