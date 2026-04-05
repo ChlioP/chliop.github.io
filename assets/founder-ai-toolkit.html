@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Founder AI Toolkit - Chliona Pham</title>
+  <link rel="stylesheet" href="hc-dashboard.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Signika+Negative:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <section class="project-detail">
+    <div class="container">
+      <h1 class="project-title">Founder AI Toolkit</h1>
+      <p class="subtitle">HackHayward 2.0 project for startup storytelling and better mentor conversations</p>
+
+      <div class="project-section">
+        <h2>Project Preview</h2>
+        <img src="grain.jpg" alt="Founder AI Toolkit preview" class="dashboard-preview" />
+      </div>
+
+      <div class="project-section">
+        <div class="project-intro">
+          <p>
+            A web app built during HackHayward 2.0 to help founders and student builders improve startup storytelling and mentor conversations.
+          </p>
+        </div>
+      </div>
+
+      <div class="project-section">
+        <h2>What It Does</h2>
+        <h3>AI Pitch Coach</h3>
+        <ul>
+          <li>Scores a startup idea across clarity, market, value, and presentation</li>
+          <li>Generates strengths, improvements, risks, next steps, and a slide outline</li>
+          <li>Supports export to Markdown (Copy / Download .md)</li>
+        </ul>
+        <h3>Mentor Matchmaker</h3>
+        <ul>
+          <li>Matches a project profile to 3 mentor personas</li>
+          <li>Provides fit scores, rationale, and specific questions to ask</li>
+          <li>Supports export to Markdown (Copy / Download .md)</li>
+        </ul>
+      </div>
+
+      <div class="project-section">
+        <h2>Current Mode (Default)</h2>
+        <ul>
+          <li>Demo Mode is ON by default in <code>app.js</code></li>
+          <li>The app runs with simulated responses and does not require an API key</li>
+          <li>Designed for demos, portfolios, and static hosting</li>
+        </ul>
+      </div>
+
+      <div class="project-section">
+        <h2>Project Structure</h2>
+        <ul>
+          <li><code>index.html</code> - Main UI markup</li>
+          <li><code>styles.css</code> - Visual design and responsive styles</li>
+          <li><code>app.js</code> - Frontend logic (tabs, form handling, rendering, autosave, export)</li>
+          <li><code>server.js</code> - Optional backend proxy for live Anthropic API calls</li>
+          <li><code>package.json</code> - Node scripts and dependencies</li>
+        </ul>
+      </div>
+
+      <div class="project-section">
+        <h2>Run Locally (Demo Mode, Free)</h2>
+        <p>No backend required if you keep Demo Mode on.</p>
+        <h3>Option A: Open directly in browser</h3>
+        <ul>
+          <li>Open <code>index.html</code></li>
+        </ul>
+        <h3>Option B: Serve via local server (recommended)</h3>
+        <ul>
+          <li>Run: <code>npx serve .</code></li>
+          <li>Open the local URL shown in your terminal</li>
+        </ul>
+      </div>
+
+      <div class="project-section">
+        <h2>Optional: Enable Real Live Model Responses</h2>
+        <ul>
+          <li>Set Demo Mode off in the UI toggle</li>
+          <li>Configure server env vars:
+            <code>cp .env.example .env</code>
+          </li>
+          <li>Add your key in <code>.env</code> as <code>ANTHROPIC_API_KEY=...</code></li>
+          <li>Install and run backend: <code>npm install</code> then <code>npm start</code></li>
+          <li>Open: <code>http://localhost:3000/index.html</code></li>
+        </ul>
+      </div>
+
+      <div class="project-section">
+        <h2>Important</h2>
+        <ul>
+          <li>Never expose API keys in frontend files</li>
+          <li>Keep keys in <code>.env</code> only (already ignored by <code>.gitignore</code>)</li>
+        </ul>
+      </div>
+
+      <div class="project-section">
+        <h2>Deployment</h2>
+        <h3>Demo-Only Deployment (No API cost)</h3>
+        <ul>
+          <li>GitHub Pages</li>
+          <li>Netlify</li>
+          <li>Vercel (static)</li>
+        </ul>
+        <h3>Live API Deployment</h3>
+        <ul>
+          <li>Render</li>
+          <li>Railway</li>
+          <li>Fly.io</li>
+        </ul>
+      </div>
+
+      <div class="project-section">
+        <h2>Tech Stack</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Vanilla JavaScript</li>
+          <li>Node.js + Express (optional backend proxy)</li>
+          <li>Anthropic Messages API (optional live mode)</li>
+        </ul>
+      </div>
+
+      <div class="project-section">
+        <h2>Notes</h2>
+        <ul>
+          <li>Local form state persists via <code>localStorage</code></li>
+          <li>Exported summaries are generated from the latest result state</li>
+          <li>App is optimized for desktop and mobile layouts</li>
+        </ul>
+      </div>
+
+      <div class="project-section">
+        <h2>Project Links</h2>
+        <ul>
+          <li><a href="https://chliop.github.io/Founder-AI-Toolkit/" target="_blank" rel="noopener noreferrer">Open Live Project</a></li>
+        </ul>
+      </div>
+
+      <div class="project-section">
+        <a href="../index.html" class="btn">← Back to Portfolio</a>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
