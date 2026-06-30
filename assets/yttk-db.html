@@ -15,77 +15,86 @@
 <body>
   <section class="project-detail">
     <div class="container">
-      <h1 class="project-title">YouTube & TikTok Trends 2025</h1>
-      <p class="subtitle">Three-page analytics dashboard comparing content, posting patterns, and creator trends across TikTok and YouTube</p>
-
-      <!-- ===== Dashboard Preview ===== -->
-      <div class="project-section">
-        <h2>Dashboard Preview</h2>
-        <!-- Swap these with your exports from Tableau Public (Download → Image) -->
-        <img src="overviews.png" alt="Overview dashboard with KPIs, engagement velocity, duration, and country rates" class="dashboard-preview"/>
-        <img src="Contents.png" alt="Contents & Posting dashboard with top hashtags, titles, seasons, map, and publish-day patterns" class="dashboard-preview"/>
-        <img src="Trends.png" alt="Trends & Creators dashboard with creator handles, trend duration types, engagement tiers, and velocity" class="dashboard-preview"/>
-      </div>
-
-      <!-- ===== Intro / Narrative ===== -->
-      <div class="project-section">
-        <div class="project-intro">
-          <p>
-            This project analyzes short-form and long-form performance across platforms using views, engagement, posting cadence,
-            and creator-level signals. The goal is to help marketers and creators decide <em>what</em> to publish, <em>when</em> to publish,
-            and <em>who</em> to partner with. At a glance:
-          </p>
-          <ul>
-            <li><strong>Overview</strong> summarizes total/average views, total videos, engagement velocity, and country engagement rate.</li>
-            <li><strong>Contents &amp; Posting</strong> surfaces winning hashtags and titles, seasonal lifts, a country map, and publish-day spikes.</li>
-            <li><strong>Trends &amp; Creators</strong> compares trend duration types, engagement by tier (Micro/Mid), and top creators by views/engagement.</li>
-          </ul>
+      <div class="hero-card">
+        <div class="hero-content">
+          <p class="eyebrow">Data Analytics • Dashboard Storytelling</p>
+          <h1 class="project-title">YouTube & TikTok Trends 2025</h1>
+          <p class="subtitle">A polished three-page analytics experience comparing content performance, posting patterns, and creator behavior across TikTok and YouTube.</p>
+          <div class="hero-actions">
+            <a href="https://public.tableau.com/views/youtube_shorts_tiktok_trends_2025-2/Overview?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" class="btn" target="_blank" rel="noopener">Open Tableau View</a>
+            <a href="../index.html" class="btn btn-secondary">← Back to Portfolio</a>
+          </div>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-card">
+            <strong>3</strong>
+            <span>Dashboard pages</span>
+          </div>
+          <div class="stat-card">
+            <strong>2</strong>
+            <span>Platforms analyzed</span>
+          </div>
+          <div class="stat-card">
+            <strong>100%</strong>
+            <span>Story-driven insights</span>
+          </div>
         </div>
       </div>
 
-      <!-- ===== Tools & Technologies ===== -->
+      <div class="project-section">
+        <div class="section-intro">
+          <h2>Project Snapshot</h2>
+          <p>This project explores short-form and long-form performance using views, engagement, posting cadence, and creator-level signals. It helps marketers and creators decide what to publish, when to publish, and who to partner with.</p>
+        </div>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <h3>Overview</h3>
+            <p>Summarizes total and average views, engagement velocity, average views per video, and country engagement rate.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Contents & Posting</h3>
+            <p>Highlights winning hashtags, title patterns, seasonal lifts, country maps, and publish-day spikes.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Trends & Creators</h3>
+            <p>Evaluates trend longevity, engagement by creator tier, and top performers by views and engagement.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-section" id="project-overview">
+        <h2>Dashboard Preview</h2>
+        <div class="preview-grid">
+          <img src="overviews.png" alt="Overview dashboard with KPIs, engagement velocity, duration, and country rates" class="dashboard-preview"/>
+          <img src="Contents.png" alt="Contents & Posting dashboard with top hashtags, titles, seasons, map, and publish-day patterns" class="dashboard-preview"/>
+          <img src="Trends.png" alt="Trends & Creators dashboard with creator handles, trend duration types, engagement tiers, and velocity" class="dashboard-preview"/>
+        </div>
+      </div>
+
       <div class="project-section">
         <h2>Tools & Technologies</h2>
         <ul>
-          <li>Tableau Public (interactive analytics & dashboarding)</li>
-          <li>SQL (PostgreSQL/MySQL) for ad-hoc EDA </li>
+          <li>Tableau Public for interactive analytics and dashboard storytelling</li>
+          <li>SQL (PostgreSQL/MySQL) for ad-hoc exploratory analysis</li>
         </ul>
       </div>
 
-      <!-- ===== Pages ===== -->
-      <div class="project-section">
-        <h2>Dashboard Pages</h2>
-        <ul>
-          <li><strong>Overview</strong> – total & average views, total videos, average engagement per creator, engagement velocity, duration of most viral video, engagement rate by country</li>
-          <li><strong>Contents & Posting</strong> – top hashtags, top titles, total views by season, map by country, publish day per platform, duration vs engagement</li>
-          <li><strong>Trends & Creators</strong> – creator handles, trend duration by type (short/medium/evergreen), engagement rate by tier, engagement velocity by trend label, top creators by views & engagement</li>
-        </ul>
-      </div>
-
-      <!-- ===== Key Insights (edit numbers/text to match your data) ===== -->
       <div class="project-section">
         <h2>Key Insights</h2>
         <ul>
-          <li><strong>Scale & velocity:</strong> TikTok generally shows higher total views and faster engagement velocity, while average views per video are similar across platforms.</li>
-          <li><strong>Seasons & timing:</strong> Views peak in Summer/Fall, with a strong posting-day spike on Fridays; Sundays often underperform.</li>
-          <li><strong>Content cues:</strong> Actionable/utility titles and broad hashtags (e.g., #FYP, #Lifestyle, #Music) remain reliable reach drivers.</li>
-          <li><strong>Trend duration:</strong> Evergreen and medium-length trends contribute outsized, durable performance vs. short spikes.</li>
-          <li><strong>Creators:</strong> Mid-tier creators can deliver strong engagement efficiency; leaderboards surface high-ROI partners.</li>
+          <li><strong>Scale & velocity:</strong> TikTok often shows higher total views and faster engagement velocity, while average views per video remain comparable.</li>
+          <li><strong>Seasonality:</strong> Performance spikes during summer and fall, with Fridays showing the strongest posting-day lift.</li>
+          <li><strong>Content cues:</strong> Utility-driven titles and broad hashtags remain reliable reach drivers.</li>
+          <li><strong>Creators:</strong> Mid-tier creators can deliver strong engagement efficiency and are often strong partnership candidates.</li>
         </ul>
       </div>
 
-      <!-- ===== Resources (update links) ===== -->
       <div class="project-section">
         <h2>Resources</h2>
         <ul>
           <li><a href="https://www.kaggle.com/datasets/tarekmasryo/youtube-shorts-and-tiktok-trends-2025" target="_blank" rel="noopener">Dataset: YouTube Shorts & TikTok Trends 2025 (Kaggle)</a></li>
           <li><a href="https://public.tableau.com/views/youtube_shorts_tiktok_trends_2025-2/Overview?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank" rel="noopener">View on Tableau Public</a></li>
         </ul>
-      </div>
-
-      <!-- ===== Back link ===== -->
-      <div class="project-section">
-        <a href="../index.html" class="btn">← Back to Portfolio</a>
       </div>
     </div>
   </section>
