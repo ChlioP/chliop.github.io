@@ -268,7 +268,11 @@ body::before {
 .what-i-do li { margin-top: 0.65rem; color: var(--muted); }
 .what-i-do li span { display: inline-block; width: 1.8rem; color: var(--pink); }
 
-.terminal-card { grid-area: terminal; align-self: end; }
+.terminal-card {
+  grid-area: terminal;
+  align-self: end;
+  transform: translateY(-1.5rem);
+}
 .terminal-bar {
   padding: 0.8rem 1rem;
   display: flex;
@@ -318,7 +322,10 @@ footer {
   .hero-actions { justify-content: center; }
   .hero-visual { min-height: 390px; }
   .what-i-do { max-width: none; }
-  .terminal-card { width: 100%; }
+  .terminal-card {
+    width: 100%;
+    transform: translateY(-0.75rem);
+  }
   .social-rail {
     right: 0.75rem;
   }
