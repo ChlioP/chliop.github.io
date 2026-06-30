@@ -296,7 +296,46 @@ section { scroll-margin-top: 100px; }
   background: rgba(28, 20, 42, 0.82);
   border-color: var(--line);
 }
-.aboutMe__content_container h1, .section__title, .educationExp__column_title, .educationExp__item h3, .projects__cards_titles h3 { color: var(--ink); }
+.aboutMe__content_container h1,
+.section__title {
+  position: relative;
+  display: inline-block;
+  padding: 0 1.2rem 1rem;
+  color: #ffe5f3 !important;
+  background: transparent;
+  border: 0;
+  font-size: clamp(2.25rem, 4vw, 3.25rem);
+  line-height: 1.15;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 600;
+  letter-spacing: 0.035em;
+  text-shadow: 0 2px 5px #090510, 0 0 18px rgba(255, 173, 216, 0.28);
+  box-shadow: none;
+}
+
+.aboutMe__content_container h1::after,
+.section__title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 96px;
+  height: 2px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, transparent, #ff9dce 22%, #ffe5f3 50%, #ff9dce 78%, transparent);
+  box-shadow: 0 0 8px rgba(255, 157, 206, 0.45);
+  transform: translateX(-50%);
+}
+
+.educationExp__column_title {
+  color: #f3a0cc;
+  font-weight: 700;
+}
+
+.educationExp__item h3,
+.projects__cards_titles h3 {
+  color: var(--ink);
+}
 .section__description, .aboutMe__content_container p, .educationExp__item p, .educationExp__item ul, .projects__cards_titles h4 { color: var(--muted); }
 .skills__grid_item:nth-child(2), .skills__grid_item:nth-child(3) { background: rgba(28, 20, 42, 0.88); }
 .skills__grid_item:nth-child(2) .icon-badges:nth-child(odd), .softSkills_badge { background: #f6edf5; }
