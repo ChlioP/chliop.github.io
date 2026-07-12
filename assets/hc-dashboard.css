@@ -252,3 +252,39 @@ a:hover {
     padding: 14px;
   }
 }
+
+.architecture-flow {
+  display: grid;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.flow-step {
+  padding: 16px 18px;
+  border: 1px solid rgba(91, 33, 182, 0.2);
+  border-radius: 14px;
+  background: rgba(245, 243, 255, 0.95);
+  color: #1e293b;
+}
+
+.flow-step strong,
+.flow-step span {
+  display: block;
+}
+
+.flow-step strong {
+  color: #5b21b6;
+}
+
+.flow-step span {
+  margin-top: 4px;
+  color: #334155;
+}
+
+.flow-arrow {
+  color: #5b21b6;
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+}

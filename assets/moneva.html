@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Smart Expense Tracker - Chliona Pham</title>
+
+  <meta
+    name="description"
+    content="A full-stack personal finance dashboard for tracking expenses, monitoring monthly budgets, analyzing spending patterns, and managing transactions."
+  >
+
+  <link rel="stylesheet" href="hc-dashboard.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Chewy&family=Signika+Negative:wght@300..700&display=swap"
+    rel="stylesheet"
+  >
+</head>
+
+<body>
+  <main class="project-detail">
+    <div class="container">
+
+      <!-- Hero -->
+      <section class="hero-card">
+        <div class="hero-content">
+          <p class="eyebrow">
+            Financial Analytics • Full-Stack Development • Data Visualization
+          </p>
+
+          <h1 class="project-title">Smart Expense Tracker</h1>
+
+          <p class="subtitle">
+            A responsive personal finance dashboard for recording expenses,
+            monitoring monthly budgets, identifying spending patterns, and
+            managing transactions through an interactive analytics interface.
+          </p>
+
+          <div class="hero-actions">
+            <a
+              href="https://smart-expense-tracker-frontend.onrender.com"
+              class="btn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Open Live App
+            </a>
+
+            <a href="../index.html" class="btn btn-secondary">
+              ← Back to Portfolio
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-card">
+            <strong>React</strong>
+            <span>Frontend dashboard</span>
+          </div>
+
+          <div class="stat-card">
+            <strong>CRUD</strong>
+            <span>Expense management</span>
+          </div>
+
+          <div class="stat-card">
+            <strong>3</strong>
+            <span>Dashboard views</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Application Preview -->
+      <section class="project-section" id="project-overview">
+        <h2>Application Preview</h2>
+
+        <img
+          src="Movena.png"
+          alt="Smart Expense Tracker dashboard showing monthly spending, budget progress, spending charts, financial insights, and transaction activity"
+          class="dashboard-preview"
+        >
+      </section>
+
+      <!-- Project Introduction -->
+      <section class="project-section">
+        <div class="project-intro">
+          <p>
+            The Smart Expense Tracker is a personal finance application that
+            helps users record expenses, review transaction history, monitor a
+            monthly budget, and understand where their money is going.
+          </p>
+
+          <p>
+            I designed the application around three main workflows:
+            understanding the current financial position, managing individual
+            transactions, and analyzing longer-term spending patterns.
+          </p>
+
+          <p>
+            The project combines front-end dashboard development, financial
+            metric calculations, responsive data visualization, and integration
+            with an expense-management backend.
+          </p>
+        </div>
+      </section>
+
+      <!-- Tools -->
+      <section class="project-section">
+        <h2>Tools & Technologies</h2>
+
+        <ul>
+          <li>React for reusable dashboard components and application state</li>
+          <li>JavaScript for financial calculations and user interactions</li>
+          <li>CSS3 for responsive layouts, themes, and component styling</li>
+          <li>Recharts for interactive financial visualizations</li>
+          <li>Axios for frontend and backend communication</li>
+          <li>REST API integration for expense create, read, update, and delete operations</li>
+          <li>LocalStorage for theme preferences and local interface settings</li>
+          <li>Render for cloud deployment</li>
+          <li>Git and GitHub for version control</li>
+        </ul>
+      </section>
+
+      <!-- Highlights -->
+      <section class="project-section">
+        <h2>Application Highlights</h2>
+
+        <div class="feature-grid">
+
+          <article class="feature-card">
+            <h3>Financial Overview</h3>
+
+            <p>
+              Displays monthly spending, remaining budget, top spending
+              category, and transaction activity in a compact summary.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <h3>Expense Management</h3>
+
+            <p>
+              Users can add, edit, review, and delete expense records through a
+              structured transaction workflow.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <h3>Budget Monitoring</h3>
+
+            <p>
+              Compares current monthly spending against a defined budget and
+              shows how much money remains available.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <h3>Spending Analytics</h3>
+
+            <p>
+              Visualizes monthly trends and category-level spending to help
+              users identify changes in financial behavior.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <h3>Transaction Filters</h3>
+
+            <p>
+              Transactions can be filtered by keyword, category, date range,
+              and minimum or maximum amount.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <h3>Responsive Interface</h3>
+
+            <p>
+              The dashboard adapts across desktop, tablet, and mobile screen
+              sizes while preserving access to core financial information.
+            </p>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- How It Works -->
+      <section class="project-section">
+        <h2>How It Works</h2>
+
+        <div class="feature-grid">
+
+          <article class="feature-card">
+            <span class="step-number">01</span>
+
+            <h3>Record</h3>
+
+            <p>
+              The user enters an amount, category, description, and transaction
+              date through the expense form.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <span class="step-number">02</span>
+
+            <h3>Store</h3>
+
+            <p>
+              The frontend sends the transaction to the backend API, which
+              stores the expense and returns the updated record.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <span class="step-number">03</span>
+
+            <h3>Calculate</h3>
+
+            <p>
+              The application calculates monthly totals, remaining budget,
+              average spending, and category-level summaries.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <span class="step-number">04</span>
+
+            <h3>Visualize</h3>
+
+            <p>
+              The processed results are displayed through summary cards,
+              charts, progress indicators, insights, and transaction tables.
+            </p>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- Analytics -->
+      <section class="project-section">
+        <h2>Financial Metrics & Analytics</h2>
+
+        <p>
+          The dashboard converts individual expense records into financial
+          summaries that are easier to interpret and compare.
+        </p>
+
+        <div class="insight-grid">
+
+          <article class="insight-card">
+            <h3>Monthly Spending</h3>
+
+            <p>
+              Calculates the total value of transactions recorded during the
+              current month.
+            </p>
+          </article>
+
+          <article class="insight-card">
+            <h3>Remaining Budget</h3>
+
+            <p>
+              Subtracts current monthly spending from the configured monthly
+              budget.
+            </p>
+          </article>
+
+          <article class="insight-card">
+            <h3>Top Category</h3>
+
+            <p>
+              Groups expenses by category and identifies the category with the
+              largest total spending.
+            </p>
+          </article>
+
+          <article class="insight-card">
+            <h3>Average Daily Spending</h3>
+
+            <p>
+              Measures the average amount spent per day during the current
+              reporting period.
+            </p>
+          </article>
+
+          <article class="insight-card">
+            <h3>Monthly Trend</h3>
+
+            <p>
+              Aggregates expense records by month to visualize changes in
+              spending over time.
+            </p>
+          </article>
+
+          <article class="insight-card">
+            <h3>Category Distribution</h3>
+
+            <p>
+              Compares the relative contribution of categories such as food,
+              transportation, subscriptions, and shopping.
+            </p>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- Data Handling -->
+      <section class="project-section">
+        <h2>Data Validation & User Feedback</h2>
+
+        <p>
+          Financial applications require clear feedback and careful handling of
+          incomplete or invalid input. The expense workflow includes validation,
+          loading states, error handling, empty states, and confirmation
+          messages.
+        </p>
+
+        <ul>
+          <li>Required expense fields are validated before submission</li>
+
+          <li>
+            Monetary values are formatted consistently using currency
+            formatting
+          </li>
+
+          <li>
+            API failures display user-friendly error states with retry options
+          </li>
+
+          <li>
+            Empty transaction results display guidance instead of blank tables
+          </li>
+
+          <li>
+            Successful create, update, and delete actions display confirmation
+            notifications
+          </li>
+
+          <li>
+            Transaction deletion requires confirmation before the record is
+            removed
+          </li>
+        </ul>
+      </section>
+
+      <!-- Technical Challenges -->
+      <section class="project-section">
+        <h2>Technical Challenges</h2>
+
+        <div class="challenge-grid">
+
+          <article class="challenge-card">
+            <h3>Reusable Financial Calculations</h3>
+
+            <p>
+              Dashboard values depend on the same underlying expense records. I
+              separated calculation utilities from UI components so metrics,
+              filters, and charts could reuse consistent analytical logic.
+            </p>
+          </article>
+
+          <article class="challenge-card">
+            <h3>Managing Multiple UI States</h3>
+
+            <p>
+              The application coordinates loading, error, empty, editing,
+              deletion, modal, and notification states without interrupting the
+              primary expense workflow.
+            </p>
+          </article>
+
+          <article class="challenge-card">
+            <h3>Responsive Data Presentation</h3>
+
+            <p>
+              Desktop tables and multi-column dashboard panels needed to remain
+              understandable on smaller screens. I adapted grids, chart layouts,
+              controls, and transaction presentation for mobile use.
+            </p>
+          </article>
+
+          <article class="challenge-card">
+            <h3>Dashboard Hierarchy</h3>
+
+            <p>
+              The interface was redesigned to prioritize monthly financial
+              performance while keeping transaction entry and detailed
+              analytics accessible without overcrowding the overview.
+            </p>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- Results -->
+      <section class="project-section">
+        <h2>Project Results</h2>
+
+        <ul>
+          <li>
+            Created a unified interface for expense entry, transaction
+            management, budgeting, and analytics
+          </li>
+
+          <li>
+            Converted transaction records into reusable monthly and
+            category-level financial metrics
+          </li>
+
+          <li>
+            Added interactive visualizations for spending trends and category
+            distribution
+          </li>
+
+          <li>
+            Added advanced filters for more efficient transaction review
+          </li>
+
+          <li>
+            Added loading, error, confirmation, notification, and empty states
+          </li>
+
+          <li>
+            Improved the application for desktop, tablet, and mobile use
+          </li>
+
+          <li>
+            Added light and dark interface themes with saved user preferences
+          </li>
+        </ul>
+      </section>
+
+      <!-- Future Improvements -->
+      <section class="project-section">
+        <h2>Future Improvements</h2>
+
+        <ul>
+          <li>Add authenticated user accounts and private financial records</li>
+
+          <li>
+            Allow users to create and manage custom monthly budgets
+          </li>
+
+          <li>
+            Add recurring expense detection and subscription tracking
+          </li>
+
+          <li>
+            Add receipt scanning with an editable transaction-review workflow
+          </li>
+
+          <li>Add CSV export for transactions and monthly summaries</li>
+
+          <li>
+            Add comparison against previous months and spending forecasts
+          </li>
+
+          <li>
+            Add automated tests for financial calculations and API failures
+          </li>
+        </ul>
+      </section>
+
+
+      <!-- Footer -->
+      <section class="project-section">
+        <a href="../index.html" class="btn">
+          ← Back to Portfolio
+        </a>
+      </section>
+
+    </div>
+  </main>
+</body>
+</html>

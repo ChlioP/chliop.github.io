@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>MarketLens Stock Dashboard - Chliona Pham</title>
+
+  <meta
+    name="description"
+    content="MarketLens is a Flask-based stock research dashboard featuring historical price charts, company data, watchlists, recent searches, and resilient financial-data handling."
+  >
+
+  <link rel="stylesheet" href="hc-dashboard.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Chewy&family=Signika+Negative:wght@300..700&display=swap"
+    rel="stylesheet"
+  >
+</head>
+
+<body>
+  <main class="project-detail">
+    <div class="container">
+
+      <!-- Hero -->
+      <section class="hero-card">
+        <div class="hero-content">
+          <p class="eyebrow">
+            Financial Analytics • Full-Stack Development • Data Visualization
+          </p>
+
+          <h1 class="project-title">MarketLens</h1>
+
+          <p class="subtitle">
+            A responsive stock research dashboard built with Python, Flask,
+            JavaScript, and Chart.js to explore company information,
+            historical prices, market news, and saved ticker activity.
+          </p>
+
+          <div class="hero-actions">
+            <a
+              href="https://stocksearch-vf1e.onrender.com"
+              class="btn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Open Live App
+            </a>
+
+            <a href="../index.html" class="btn btn-secondary">
+              ← Back to Portfolio
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-card">
+            <strong>Flask</strong>
+            <span>Backend framework</span>
+          </div>
+
+          <div class="stat-card">
+            <strong>5+</strong>
+            <span>Core research features</span>
+          </div>
+
+          <div class="stat-card">
+            <strong>100%</strong>
+            <span>Responsive dashboard</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Dashboard Preview -->
+      <section class="project-section" id="project-overview">
+        <h2>Application Preview</h2>
+
+        <img
+          src="marketlens.png"
+          alt="MarketLens stock research dashboard displaying AMD company information, a historical stock price chart, watchlist, recent searches, and comparison tools"
+          class="dashboard-preview"
+        >
+      </section>
+
+      <!-- Project Introduction -->
+      <section class="project-section">
+        <div class="project-intro">
+          <p>
+            MarketLens is a financial research application that transforms
+            external market data into a structured and responsive dashboard.
+            Users can search stock symbols, review company and quote
+            information, explore historical price movement, save tickers to a
+            local watchlist, revisit recent searches, and compare available
+            stock metrics.
+          </p>
+
+          <p>
+            The original application used a basic form-and-tabs layout. I
+            redesigned it into a market intelligence dashboard with stronger
+            information hierarchy, interactive visualizations, responsive
+            layouts, and clearer handling of missing or delayed financial data.
+          </p>
+        </div>
+      </section>
+
+      <!-- Tools -->
+      <section class="project-section">
+        <h2>Tools & Technologies</h2>
+
+        <ul>
+          <li>Python and Flask for backend routing and API requests</li>
+          <li>HTML5 and CSS3 for dashboard structure and responsive design</li>
+          <li>JavaScript for search interactions, watchlists, and UI state</li>
+          <li>Chart.js for historical stock price visualization</li>
+          <li>LocalStorage for saved watchlists and recent searches</li>
+          <li>External financial data APIs for company, quote, historical, and news data</li>
+          <li>Render for cloud deployment</li>
+          <li>Git and GitHub for version control</li>
+        </ul>
+      </section>
+
+      <!-- Features -->
+      <section class="project-section">
+        <h2>Application Highlights</h2>
+
+        <ul>
+          <li>
+            Stock Search: Search company data using ticker symbols such as
+            AAPL, MSFT, NVDA, AMD, and TSLA
+          </li>
+
+          <li>
+            Company Summary: Display company name, ticker, exchange, previous
+            close, update time, and data availability
+          </li>
+
+          <li>
+            Historical Price Chart: Explore price movement across multiple
+            time ranges
+          </li>
+
+          <li>
+            Watchlist: Save and reopen ticker symbols using browser
+            LocalStorage
+          </li>
+
+          <li>
+            Recent Searches: Store recent successful ticker searches for
+            faster navigation
+          </li>
+
+          <li>
+            Stock Comparison: Compare available metrics across two selected
+            companies
+          </li>
+
+          <li>
+            Financial News: Display recent company-related articles when
+            supported by the API
+          </li>
+
+          <li>
+            Responsive Layout: Support desktop, tablet, and mobile screen sizes
+          </li>
+        </ul>
+      </section>
+
+      <!-- Architecture -->
+      <section class="project-section">
+        <h2>Application Architecture</h2>
+
+        <div class="architecture-flow">
+          <div class="flow-step">
+            <strong>1. User Search</strong>
+            <span>User enters a stock ticker symbol</span>
+          </div>
+
+          <div class="flow-arrow">↓</div>
+
+          <div class="flow-step">
+            <strong>2. Flask Route</strong>
+            <span>The backend validates and processes the request</span>
+          </div>
+
+          <div class="flow-arrow">↓</div>
+
+          <div class="flow-step">
+            <strong>3. Financial Data API</strong>
+            <span>Company, quote, historical, and news data are requested</span>
+          </div>
+
+          <div class="flow-arrow">↓</div>
+
+          <div class="flow-step">
+            <strong>4. Data Validation</strong>
+            <span>Missing, delayed, and invalid values are checked</span>
+          </div>
+
+          <div class="flow-arrow">↓</div>
+
+          <div class="flow-step">
+            <strong>5. Dashboard Rendering</strong>
+            <span>Validated results are displayed in charts and panels</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Data Quality -->
+      <section class="project-section">
+        <h2>Financial Data Quality Handling</h2>
+
+        <p>
+          Financial APIs may return delayed quotes, incomplete records, missing
+          historical prices, or temporary request failures. The application
+          validates returned values before displaying them to prevent missing
+          data from appearing as legitimate financial values.
+        </p>
+
+        <ul>
+          <li>
+            Missing latest price values display as
+            <strong>“Price unavailable”</strong> instead of $0.00
+          </li>
+
+          <li>
+            Missing market index values display a compact unavailable status
+          </li>
+
+          <li>
+            Missing historical data uses a dedicated chart empty state
+          </li>
+
+          <li>
+            Invalid ticker symbols return a clear user-facing error message
+          </li>
+
+          <li>
+            Delayed financial values are labeled so users do not interpret them
+            as real-time trading signals
+          </li>
+        </ul>
+      </section>
+
+      <!-- Challenges -->
+      <section class="project-section">
+        <h2>Technical Challenges</h2>
+
+        <div class="challenge-grid">
+
+          <article class="challenge-card">
+            <h3>Inconsistent API Responses</h3>
+            <p>
+              Financial endpoints sometimes returned missing or differently
+              formatted values. I added reusable validation and formatting
+              logic before rendering financial metrics.
+            </p>
+          </article>
+
+          <article class="challenge-card">
+            <h3>Chart Layout Stability</h3>
+            <p>
+              The historical chart previously expanded during responsive
+              resizing. I constrained its container height and controlled chart
+              recreation to prevent browser lag and layout growth.
+            </p>
+          </article>
+
+          <article class="challenge-card">
+            <h3>Dashboard Hierarchy</h3>
+            <p>
+              I replaced the original form-and-tabs interface with a two-column
+              research dashboard that prioritizes company data and historical
+              analysis while keeping watchlist tools secondary.
+            </p>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- Results -->
+      <section class="project-section">
+        <h2>Project Results</h2>
+
+        <ul>
+          <li>
+            Replaced the original tab-based interface with a responsive
+            financial dashboard
+          </li>
+
+          <li>
+            Added historical price visualization with multiple time-range
+            controls
+          </li>
+
+          <li>
+            Prevented missing financial data from appearing as misleading zero
+            values
+          </li>
+
+          <li>
+            Added persistent watchlist and recent-search functionality
+          </li>
+
+          <li>
+            Improved loading, unavailable, and error states
+          </li>
+
+          <li>
+            Created a clearer experience across desktop, tablet, and mobile
+            devices
+          </li>
+        </ul>
+      </section>
+
+      <!-- Future Improvements -->
+      <section class="project-section">
+        <h2>Future Improvements</h2>
+
+        <ul>
+          <li>Add authenticated watchlists that synchronize across devices</li>
+          <li>Add normalized stock performance comparison charts</li>
+          <li>Add CSV export for historical price data</li>
+          <li>Add caching to reduce repeated external API requests</li>
+          <li>Add more financial ratios through an additional data source</li>
+          <li>Add automated tests for formatting, validation, and API failures</li>
+        </ul>
+      </section>
+
+      <!-- Footer Action -->
+      <section class="project-section">
+        <a href="../index.html" class="btn">← Back to Portfolio</a>
+      </section>
+
+    </div>
+  </main>
+</body>
+</html>
