@@ -1,5 +1,6 @@
 import { socialLinks } from "../data/socialLinks";
 import "../styles/connect.css";
+import avatarUrl from "../../assets/avatar.png";
 
 export function ConnectPage() {
   return (
@@ -9,7 +10,7 @@ export function ConnectPage() {
           &lt; CP &gt;
         </a>
         <div className="connect-card__portrait">
-          <img src="/assets/avatar.png" alt="Chliona Pham" />
+          <img src={avatarUrl} alt="Chliona Pham" />
         </div>
         <p className="connect-card__eyebrow">Let’s connect</p>
         <h1 id="connect-title">Chliona Pham</h1>
