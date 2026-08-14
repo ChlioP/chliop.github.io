@@ -49,7 +49,7 @@ export const socialLinks: SocialLink[] = [
   },
   {
     name: "Download Resume",
-    url: "/resume.pdf",
+    url: "/assets/Chliona-Pham-Resume.pdf",
     icon: HiOutlineDocumentArrowDown,
     download: true,
   },
