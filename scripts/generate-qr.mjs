@@ -15,7 +15,7 @@ await QRCode.toFile("public/chliona-connect-qr.png", connectUrl, {
 });
 
 await copyFile(
-  "assets/Chliona-Pham-Resume-Data-Analyst-General.pdf",
+  "assets/Chliona-Pham-Resume.pdf",
   "public/resume.pdf",
 );
 
