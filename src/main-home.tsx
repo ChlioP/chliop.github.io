@@ -46,7 +46,10 @@ window.addEventListener("resize", () => {
 if (qrRoot) {
   createRoot(qrRoot).render(
     <StrictMode>
-      <PortfolioQRCode url="https://chliop.github.io/connect" />
+      <PortfolioQRCode
+        url="https://chliop.github.io/connect"
+        href="/connect/"
+      />
     </StrictMode>,
   );
 }

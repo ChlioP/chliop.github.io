@@ -3,9 +3,10 @@ import "../styles/connect.css";
 
 type PortfolioQRCodeProps = {
   url: string;
+  href?: string;
 };
 
-export function PortfolioQRCode({ url }: PortfolioQRCodeProps) {
+export function PortfolioQRCode({ url, href = url }: PortfolioQRCodeProps) {
   return (
     <div className="portfolio-qr">
       <div className="portfolio-qr__code" aria-hidden="true">
@@ -20,7 +21,7 @@ export function PortfolioQRCode({ url }: PortfolioQRCodeProps) {
         />
       </div>
       <p>Scan to view my student profile</p>
-      <a href={url} aria-label="Open Chliona Pham's connect page">
+      <a href={href} aria-label="Open Chliona Pham's connect page">
         chliop.github.io/connect
       </a>
     </div>
