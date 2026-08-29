@@ -12,13 +12,14 @@ export function ConnectPage() {
         <div className="connect-card__portrait">
           <img src={avatarUrl} alt="Chliona Pham" />
         </div>
-        <p className="connect-card__eyebrow">Let’s connect</p>
+        <p className="connect-card__eyebrow">Graduate student · Open to opportunities</p>
         <h1 id="connect-title">Chliona Pham</h1>
         <p className="connect-card__tagline">
-          Data Analytics <span aria-hidden="true">|</span> Supply Chain Operations{" "}
-          <span aria-hidden="true">|</span> Dashboard Development
+          Analytics graduate student with a Computer Science background, seeking
+          internships and entry-level roles in data analytics, business intelligence,
+          and technology.
         </p>
-        <nav className="connect-links" aria-label="Professional and social links">
+        <nav className="connect-links" aria-label="Portfolio, résumé, and social links">
           {socialLinks.map(({ name, url, icon: Icon, download }) => {
             const isPlaceholder = url.startsWith("REPLACE_");
             return (
@@ -39,7 +40,9 @@ export function ConnectPage() {
             );
           })}
         </nav>
-        <p className="connect-card__footer">Open to thoughtful conversations and new opportunities.</p>
+        <p className="connect-card__footer">
+          I’d love to connect with recruiters, mentors, and teams looking for an eager learner.
+        </p>
       </section>
     </main>
   );

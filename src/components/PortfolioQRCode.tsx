@@ -19,7 +19,7 @@ export function PortfolioQRCode({ url }: PortfolioQRCodeProps) {
           title="QR code for Chliona Pham's connect page"
         />
       </div>
-      <p>Scan to connect with me</p>
+      <p>Scan to view my student profile</p>
       <a href={url} aria-label="Open Chliona Pham's connect page">
         chliop.github.io/connect
       </a>
